@@ -1,0 +1,28 @@
+.projects-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  margin-top: 2rem;
+}
+
+.project-item {
+  background-color: #2B2B2B;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.project-item:hover {
+  transform: scale(1.02);
+}
+
+.tech-tag {
+  background-color: #444;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  display: inline-block;
+}
