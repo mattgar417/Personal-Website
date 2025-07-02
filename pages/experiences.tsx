@@ -40,7 +40,7 @@ export default function Experiences() {
         },
         {
             title: "National Energy Technology Laboratory",
-	position: "Research Associate"
+	position: "Research Associate",
             description: "Characterized simulated acoustic signals using machine learning to develop early kick detection algorithm in offshore wells as part of the Mickey Leland Energy Fellowship Program",
 	liveLink: "https://orise.orau.gov/mlef/default.html",
         },
