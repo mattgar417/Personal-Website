@@ -35,13 +35,13 @@ export default function Extracurriculars() {
             title: "SHPE",
 	position: "Treasurer",
             description: "Serve as the treasurer of Northeastern’s chapter of SHPE, planning the club’s annual budget, planning for convention, and handling reimbursements",
-	livelink: "https://shpe.sites.northeastern.edu"
+	liveLink: "https://shpe.sites.northeastern.edu"
         },
         {
             title: "AI Club",
 	position: "Director of Education",
             description: "Lead the AI Club’s education division, overseeing the club’s forums and bootcamps.",
-	livelink: "https://aineu.org"
+	liveLink: "https://aineu.org"
         }
     ];
 
