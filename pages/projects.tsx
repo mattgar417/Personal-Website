@@ -86,7 +86,7 @@ export default function Projects() {
             title: "Smart Glasses",
             description: "XR Glasses that interacts with speakers and microphones, connecting via Bluetooth to an app to access LLMs",
             technologies: ["C++", "Arduino", "Python", "Javascript"],
-            githubLink: "https://github.com/SINRG-Lab".
+            githubLink: "https://github.com/SINRG-Lab",
         },
         {
        	title: "ZOR! - Seizure Monitoring App",
