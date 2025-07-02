@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { FaChevronLeft, FaExternalLinkAlt, FaBriefcase } from 'react-icons/fa';
 import ItemPage from '../components/ItemPage';
-import '../styles/experiences.css';
+import '../styles/experiences.module.css';
 
 interface Experience {
     title: string;
