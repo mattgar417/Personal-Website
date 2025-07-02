@@ -46,13 +46,13 @@ export default function Experiences() {
         },
         {
             title: "Mayflower Communications Company",
-	position: "Software Engineering Co-op"
+	position: "Software Engineering Co-op",
             description: "Developed C software for implementation of digital signal processing algorithms in order to find directions of arrival of meaconing spoofers and generate weights that can null them, allowing planes to use GPS without interference from spoofers, also implemented residual neural network (RNN) converted from Python to C to perform automatic modulation classification on signals being received from jammer for five different classes, achieving 88% accuracy rate",
-	liveLink: "https://www.mayflowercom.com"
+	liveLink: "https://www.mayflowercom.com",
         },
         {
             title: "MENTIS Laboratory",
-	position: "Undergraduate Researcher"
+	position: "Undergraduate Researcher",
             description: "Awarded Peak Base Camp Award to implement deep learning algorithm using Pytorch that was able to perform single-image super resolution in order to bring low resolution images to higher resolutions with data from lab’s omnidirectional camera",
         }
     ];
