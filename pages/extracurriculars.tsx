@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { FaChevronLeft, FaExternalLinkAlt, FaUsers } from 'react-icons/fa';
 import ItemPage from '../components/ItemPage';
-import '../styles/extracurriculars.css';
+import '../styles/extracurriculars.module.css';
 
 interface Extracurricular{
     title: string;
