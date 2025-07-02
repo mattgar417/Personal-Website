@@ -108,7 +108,7 @@ export default function Projects() {
                             <h3>{project.title}</h3>
                             <p className="project-description">{project.description}</p>
                             <div className="project-technologies">
-                                {project.technologies.map((tech, techIndex) => (
+                                {project.technologies?.map((tech, techIndex) => (
                                     <span key={techIndex} className="tech-tag">{tech}</span>
                                 ))}
                             </div>
