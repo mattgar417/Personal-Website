@@ -94,7 +94,7 @@ export default function Matthew() {
                         style={{
                             borderBottom: `6px solid ${item.color}`,
                         }}
-                        onClick={() => handleItemClick(item.path, item.externalLink, item.action)}
+                        onClick={() => handleItemClick(undefined, item.externalLink, item.action)}
                     >
                         <div className="icon-wrapper" style={{ color: item.color }}>
                             <item.Icon />
