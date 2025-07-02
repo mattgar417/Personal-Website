@@ -26,7 +26,7 @@ export default function Projects() {
         router.push('/matthew');
     };
 
-    const projects: Projecst[] = [
+    const projects: Projects[] = [
         {
             title: "Personal Website",
             description: "Matthew Garcia’s Portfolio Website",
