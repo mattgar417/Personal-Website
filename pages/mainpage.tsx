@@ -16,7 +16,7 @@ const matthewData = [
 ];
 
 const matthewBanner = [
-    {label: 'Home', path: '/mainpage'
+    {label: 'Home', path: '/mainpage'},
     { label: 'Experiences', path: '/experiences' },
     { label: 'Extracurriculars', path: '/extracurriculars' },
     { label: 'Projects', path: '/projects' },
