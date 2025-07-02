@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { FaChevronLeft, FaExternalLinkAlt, FaGithub, FaLaptopCode } from 'react-icons/fa';
 import ItemPage from '../components/ItemPage';
-import '../styles/projects.css';
+import '../styles/projects.module.css';
 
 interface Projects{
     title: string;
