@@ -49,23 +49,6 @@ export default function Matthew() {
    }
 };
 
-
-
-        if (action === 'openResume') {
-            window.open('/Matthew Garcia Resume.pdf', '_blank');
-            return;
-        }
-
-        if (externalLink) {
-            window.open(externalLink, '_blank');
-            return;
-        }
-
-        if (path) {
-            router.push(path);
-        }
-    };
-
     return (
         <div className="min-h-screen flex flex-col items-center justify-center p-4 relative bg-[#1E1E1E] overflow-hidden">
             {/* Banner at the Top */}
