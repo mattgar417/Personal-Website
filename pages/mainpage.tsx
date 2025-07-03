@@ -12,7 +12,6 @@ const matthewData = [
     { Icon: FaPenNib, label: 'Substack', color: '#FF4B4B', externalLink: 'https://substack.com/@mattgar417' },
     { Icon: FaEnvelope, label: 'Email', color: '#58CC02', action: 'copyEmail' },
     { Icon: GrDocumentUser, label: 'Resume', color: '#1CB0F6', action: 'openResume' },
-    // Add more icons and links as needed
 ];
 
 const matthewBanner = [
@@ -78,15 +77,15 @@ export default function Matthew() {
                     <Image
                         src="Matthew Garcia.png"
                         alt="Matthew's profile picture"
-                        width={500}
-                        height={700}
+                        width={350}
+                        height={500}
                         className="rounded-full"
                     />
                 </div>
             </div>
 
             {/* Icons below the picture/text box */}
-            <div className="flex justify-center flex-wrap mt-8 gap-6">
+            <div className="flex flex-wrap justify-center items-center gap-6 mt-8">
                 {matthewData.map((item, index) => (
                     <div
                         key={index}
