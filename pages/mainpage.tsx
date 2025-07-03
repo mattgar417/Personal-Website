@@ -78,15 +78,15 @@ export default function Matthew() {
                     <Image
                         src="Matthew Garcia.png"
                         alt="Matthew's profile picture"
-                        width={200}
-                        height={200}
+                        width={500}
+                        height={700}
                         className="rounded-full"
                     />
                 </div>
             </div>
 
             {/* Icons below the picture/text box */}
-            <div className="flex justify-center mt-8 space-x-6">
+            <div className="flex justify-center flex-wrap mt-8 gap-6">
                 {matthewData.map((item, index) => (
                     <div
                         key={index}
