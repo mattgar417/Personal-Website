@@ -22,7 +22,7 @@ export default function Extracurriculars() {
     }, []);
 
     const handleBackClick = () => {
-        router.push('/matthew');
+        router.push('/mainpage');
     };
 
     const extracurriculars: Extracurricular[] = [
