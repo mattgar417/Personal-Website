@@ -22,7 +22,7 @@ export default function Experiences() {
     }, []);
 
     const handleBackClick = () => {
-        router.push('/matthew');
+        router.push('/mainpage');
     };
 
     const experiences: Experience[] = [
