@@ -115,7 +115,7 @@ export default function Projects() {
                             <div className="project-links">
                                 {project.githubLink && (
                                     <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                                        <FaGitHub /> GitHub
+                                        <FaGithub /> GitHub
                                     </a>
                                 )}
                                 {project.Link && (
