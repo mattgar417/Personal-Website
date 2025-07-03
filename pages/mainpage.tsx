@@ -85,7 +85,7 @@ export default function Matthew() {
             </div>
 
             {/* Icons below the picture/text box */}
-            <div className="flex flex-wrap justify-center items-center gap-6 mt-8">
+            <div className="<div className="flex justify-center flex-row flex-wrap gap-6 mt-8">
                 {matthewData.map((item, index) => (
                     <div
                         key={index}
@@ -111,19 +111,17 @@ export default function Matthew() {
 
             <style jsx>{`
                 .about-me-item {
-                    width: 100px;
-                    height: 100px;
                     background: #2B2B2B;
                     border-radius: 20px;
-                    padding: 0.8rem;
+                    padding: 1rem;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    text-align: center;
                     cursor: pointer;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
-                    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                    width: 100px;
                 }
 
                 .about-me-item:hover {
