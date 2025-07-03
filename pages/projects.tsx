@@ -23,7 +23,7 @@ export default function Projects() {
     }, []);
 
     const handleBackClick = () => {
-        router.push('/matthew');
+        router.push('/mainpage');
     };
 
     const projects: Projects[] = [
