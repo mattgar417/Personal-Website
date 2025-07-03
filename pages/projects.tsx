@@ -11,7 +11,7 @@ interface Projects{
     description?: string;
     technologies?: string[];
     githubLink?: string;
-    liveLink?: string;
+    Link?: string;
 }
 
 export default function Projects() {
@@ -30,26 +30,26 @@ export default function Projects() {
         {
             title: "Personal Website",
             description: "Matthew Garcia’s Portfolio Website",
-            technologies: ["TypeScript", "Next.js", "React"],
+            technologies: ["TypeScript, ", "Next.js, ", "React"],
             githubLink: "https://github.com/mattgar417Personal-Website",
-            liveLink: "https://matthew.garcia",
+            Link: "https://matthew.garcia",
         },
         {
             title: "Machine Learning Compendium",
             description: "Document compiling information about machine learning and deep learning algorithms with associated code",
             technologies: ["Python"],
-            liveLink: "https://docs.google.com/document/d/1qpSZIiWX02kXmSOw8MFxGwPH_y2vtTG1jvBXJrj75J0/edit?usp=sharing",
+            Link: "https://docs.google.com/document/d/1qpSZIiWX02kXmSOw8MFxGwPH_y2vtTG1jvBXJrj75J0/edit?usp=sharing",
         },
         {
             title: "Research Paper Extraction Tool",
             description: "Tool to extract and analyze data from research papers",
-            technologies: ["Python", "HTML"],
+            technologies: ["Python, ", "HTML"],
             githubLink: "https://github.com/mattgar417/AI-Research-Tool",
         },
         {
             title: "Mecha Mayhem",
             description: "Educational and interactive game presented at the Boston’s Children Museum",
-            technologies: ["C++", "Arduino", "Processing"],
+            technologies: ["C++, ", "Arduino, ", "Processing"],
             githubLink: "https://github.com/mattgar417/Mecha-Mayhem",
         },
         {
@@ -61,14 +61,14 @@ export default function Projects() {
         {
             title: "Omnidirectional Super-Resolution Reconstruction Application",
             description: "Performs single image super-resolution on omnidirectional cameras, reconstructing images from low to high resolution",
-            technologies: ["Python", "Pytorch"],
+            technologies: ["Python, ", "Pytorch"],
             githubLink: "https://github.com/mattgar417/Omnidirectional-Super-Resolution",
         },
         {
             title: "Electrocardiogram System",
             description: "An analog and digital system able to filter and analyze an ECG system",
-            technologies: ["Circuit Design", "Matlab"],
-	liveLink: "https://docs.google.com/document/d/152AmXvRAE57zt7r68lldgBgvrbklMp7Xmk-hy2SVsYg/edit?usp=sharing",
+            technologies: ["Circuit Design, ", "Matlab"],
+	    Link: "https://docs.google.com/document/d/152AmXvRAE57zt7r68lldgBgvrbklMp7Xmk-hy2SVsYg/edit?usp=sharing",
         },
         {
             title: "Smart City Resource Allocation",
@@ -79,19 +79,19 @@ export default function Projects() {
         {
             title: "RISC-V Architecture",
             description: "Simulates and tests the architecture of a RISC-V processor",
-            technologies: ["SystemVerilog", "RISC-V"],
+            technologies: ["SystemVerilog, ", "RISC-V"],
             githubLink: "https://github.com/mattgar417/RISCV-Architecture",
         },
         {
             title: "Smart Glasses",
             description: "XR Glasses that interacts with speakers and microphones, connecting via Bluetooth to an app to access LLMs",
-            technologies: ["C++", "Arduino", "Python", "Javascript"],
+            technologies: ["C++, ", "Arduino, ", "Python, ", "Javascript"],
             githubLink: "https://github.com/SINRG-Lab",
         },
         {
-       	title: "ZOR! - Seizure Monitoring App",
+       	    title: "ZOR! - Seizure Monitoring App",
             description: "iOS application that visualizes seizure patterns and generates insights",
-            technologies: ["Python", "Pytorch"],
+            technologies: ["Python, ", "Pytorch"],
             githubLink: "https://github.com/ZOR-app",
         },
     ];
@@ -113,11 +113,13 @@ export default function Projects() {
                                 ))}
                             </div>
                             <div className="project-links">
-                                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                                    <FaGithub /> GitHub
-                                </a>
-                                {project.liveLink && (
-                                    <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                                {project.githubLink && (
+                                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                                        <FaGitHub /> GitHub
+                                    </a>
+                                )}
+                                {project.Link && (
+                                    <a href={project.Link} target="_blank" rel="noopener noreferrer">
                                         <FaExternalLinkAlt /> Live Link
                                     </a>
                                 )}
