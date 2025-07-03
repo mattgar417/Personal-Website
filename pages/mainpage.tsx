@@ -85,7 +85,7 @@ export default function Matthew() {
             </div>
 
             {/* Icons below the picture/text box */}
-            <div className="<div className="flex justify-center flex-row flex-wrap gap-6 mt-8">
+            <div className="flex justify-center flex-row flex-wrap gap-6 mt-8">
                 {matthewData.map((item, index) => (
                     <div
                         key={index}
