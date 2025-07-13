@@ -8,7 +8,7 @@ import { GrDocumentUser } from "react-icons/gr";
 
 const matthewData = [
     { Icon: FaGithub, label: 'Github', color: '#CE82FF', externalLink: 'http://github.com/mattgar417' },
-    { Icon: FaLinkedin, label: 'LinkedIn', color: '#FF4B4B', externalLink: 'https://www.linkedin.com/in/mattgar417' },
+    { Icon: FaLinkedin, label: 'LinkedIn', color: '#0077B5', externalLink: 'https://www.linkedin.com/in/mattgar417' },
     { Icon: FaPenNib, label: 'Substack', color: '#FF4B4B', externalLink: 'https://substack.com/@mattgar417' },
     { Icon: FaEnvelope, label: 'Email', color: '#58CC02', action: 'copyEmail' },
     { Icon: GrDocumentUser, label: 'Resume', color: '#1CB0F6', action: 'openResume' },
