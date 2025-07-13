@@ -72,7 +72,7 @@ export default function Experiences() {
                             {experience.liveLink && (
                                <div className="experience-links">
       			<a href={experience.liveLink} target="_blank" rel="noopener noreferrer">
-        			   <FaExternalLinkAlt /> Live Link
+        			   <FaExternalLinkAlt /> Link
       			</a>
     		     </div>
   		)}
