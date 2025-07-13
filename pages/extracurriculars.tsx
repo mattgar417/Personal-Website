@@ -60,7 +60,7 @@ export default function Extracurriculars() {
                             {extracurricular.liveLink && (
                                <div className="extracurricular-links">
       			<a href={extracurricular.liveLink} target="_blank" rel="noopener noreferrer">
-        			   <FaExternalLinkAlt /> Live Link
+        			   <FaExternalLinkAlt /> Link
       			</a>
     		     </div>
   		     )}
