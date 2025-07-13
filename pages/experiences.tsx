@@ -67,8 +67,8 @@ export default function Experiences() {
                     {experiences.map((experience, index) => (
                         <div key={index} className="experience-item">
                             <h3>{experience.title}</h3>
+			    <p className="experiences-position">{experience.position}</p>
                             <p className="experiences-description">{experience.description}</p>
-	                <p className="experiences-position">{experience.position}</p>
                             {experience.liveLink && (
                                <div className="experience-links">
       			<a href={experience.liveLink} target="_blank" rel="noopener noreferrer">
