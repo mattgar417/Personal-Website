@@ -120,7 +120,7 @@ export default function Projects() {
                                 )}
                                 {project.Link && (
                                     <a href={project.Link} target="_blank" rel="noopener noreferrer">
-                                        <FaExternalLinkAlt /> Live Link
+                                        <FaExternalLinkAlt /> Link
                                     </a>
                                 )}
                             </div>
