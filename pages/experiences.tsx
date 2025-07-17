@@ -35,7 +35,7 @@ export default function Experiences() {
         {
             title: "SINRG Laboratory",
 	position: "AJC Merit Research Scholar",
-            description: "Engineered embedded systems for XR/AI smart glasses using Arduino, integrating sensor inputs and microcontroller logic; and developed backend infrastructure for companion mobile application, facilitating acoustic data exchange between embedded software in smart glasses and LLMs/Speech-to-Text using Deepgram and Assembly AI in Python",
+            description: "Developed embedded systems for XR/AI smart glasses and created a backend to stream sensor/audio data from Arduino to LLMs and STT services",
 	liveLink: "https://sinrg.org",
         },
         {
@@ -47,13 +47,13 @@ export default function Experiences() {
         {
             title: "Mayflower Communications Company",
 	position: "Software Engineering Co-op",
-            description: "Developed C software for implementation of digital signal processing algorithms in order to find directions of arrival of meaconing spoofers and generate weights that can null them, allowing planes to use GPS without interference from spoofers, also implemented residual neural network (RNN) converted from Python to C to perform automatic modulation classification on signals being received from jammer for five different classes, achieving 88% accuracy rate",
+            description: "Programmed DSP algorithms in C to detect and neutralize GPS spoofers; ported a ResNet from Python to C for real-time signal classification",
 	liveLink: "https://www.mayflowercom.com",
         },
         {
             title: "MENTIS Laboratory",
 	position: "Undergraduate Researcher",
-            description: "Awarded Peak Base Camp Award to implement deep learning algorithm using Pytorch that was able to perform single-image super resolution in order to bring low resolution images to higher resolutions with data from lab’s omnidirectional camera",
+            description: "Used PyTorch to implement a deep learning model for single-image super-resolution, enhancing omnidirectional camera data",
         }
     ];
 
