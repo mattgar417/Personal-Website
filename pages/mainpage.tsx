@@ -113,16 +113,18 @@ export default function Matthew() {
                 .about-me-item {
                     background: #2B2B2B;
                     border-radius: 20px;
-                    padding: 1rem;
+                    padding: 0.75rem 1.25rem;
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: row;
                     align-items: center;
-                    justify-content: center;
+                    gap: 0.5rem;
                     cursor: pointer;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-                    width: 100px;
+                    min-width: 150px;
+                    height: 60px;
                 }
+
 
                 .about-me-item:hover {
                     transform: scale(1.1);
