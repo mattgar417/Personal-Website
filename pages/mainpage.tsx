@@ -117,11 +117,12 @@ export default function Matthew() {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    gap: 0.5rem;
+                    gap: 0.6rem;
                     cursor: pointer;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-                    min-width: 150px;
+                    border-bottom-width: 6px;
+                    white-space: nowrap;
                     height: 60px;
                 }
 
