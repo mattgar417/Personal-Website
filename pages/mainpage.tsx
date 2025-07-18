@@ -68,7 +68,7 @@ export default function Matthew() {
                 <div className="text-box flex-1 text-center md:text-left">
                     <h1 className="text-4xl font-bold text-white mb-4">Hello, I'm Matthew!</h1>
                     <p className="text-lg text-white">
-                        I'm an electrical and computer engineering student passionate about machine learning, embedded software, and electrical design. I enjoy working on exciting projects and love learning new technologies. Feel free to explore my work and connect with me through the links below.
+                        I am a 4th year Electrical and Computer Engineering student at Northeastern University. At this moment, I'm currently on co-op at the SINRG Laboratory and working as a software developer at ZOE!. I'm passionate about machine learning, embedded software, and electrical design. My goal is to combine these interests in pursuit of a PhD, applying them to AI wearables in health. Feel free to explore my work in this website and connect with me through the links below.
                     </p>
                 </div>
 
