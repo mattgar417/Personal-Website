@@ -85,7 +85,7 @@ export default function Projects() {
         {
             title: "Smart Glasses",
             description: "XR Glasses that interacts with speakers and microphones, connecting via Bluetooth to an app to access LLMs",
-            technologies: ["C++, ", "Arduino, ", "Python, ", "Javascript"],
+            technologies: ["C++, ", "Arduino, ", "Python, ", "Javascript", "Kotlin"],
             githubLink: "https://github.com/SINRG-Lab",
         },
         {
