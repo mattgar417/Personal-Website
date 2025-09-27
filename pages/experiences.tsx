@@ -28,7 +28,7 @@ export default function Experiences() {
     const experiences: Experience[] = [
         {
             title: "ZOR!",
-	position: "Machine Learning Engineer",
+	position: "Software Engineer",
             description: "Generating insights for ZOR!’s seizure monitoring app while developing AI pipeline for future prediction",
 	liveLink: "https://zor.llc",
         },
