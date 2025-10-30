@@ -49,9 +49,9 @@ export default function Matthew() {
 };
 
     return (
-        <div className="min-h-screen flex flex-col justify-end items-center gap-6 p-4 relative bg-[#1E1E1E] pr-8 overflow-hidden border-b border-gray-600 pb-4">
+        <div className="min-h-screen flex flex-col items-end gap-6 p-4 relative bg-[#1E1E1E] overflow-hidden">
             {/* Banner at the Top */}
-            <div className="flex justify-center space-x-8 mt-8 mb-8">
+            <div className="flex justify-end space-x-8 mt-8 mb-8 w-full border-b border-gray-600 pb-4 pr-8">
                 {matthewBanner.map((item, index) => (
                     <div
                         key={index}
