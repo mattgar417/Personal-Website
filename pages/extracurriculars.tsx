@@ -53,7 +53,7 @@ export default function Extracurriculars() {
             <ItemPage Icon={FaUsers} title="My Extracurriculars" color="#2B70C9">
                 <div className="extracurricular-grid">
                     {extracurriculars.map((extracurricular, index) => (
-                        <div key={index} className="extracurricular-item" style={{ marginBottom: "3rem" }}>
+                        <div key={index} className="extracurricular-item" style={{ marginBottom: "1rem" }}>
                             <h3>{extracurricular.title}</h3>
 		     <p className="extracurriculars-position">{extracurricular.position}</p>
                             <p className="extracurriculars-description">{extracurricular.description}</p>
