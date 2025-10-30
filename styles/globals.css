@@ -63,7 +63,7 @@ hr {
 .profile-picture {
   flex: .4;
   padding-left: 2rem;
-  margin-bottom: 2rem
+  margin-bottom: 1rem
 }
 
 /* Smooth transitions for animations */
