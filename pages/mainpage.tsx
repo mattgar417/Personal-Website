@@ -76,7 +76,7 @@ export default function Matthew() {
                 </div>
 
                 {/* Right Column: Profile Picture */}
-                <div className="profile-picture flex justify-center md:justify-end">
+                <div className="profile-picture">
                     <Image
                         src="Matthew Garcia.png"
                         alt="Matthew's profile picture"
