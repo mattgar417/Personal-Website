@@ -64,11 +64,11 @@ export default function Matthew() {
             </div>
 
             {/* Divider Line */}
-            <hr className="w-full border-t border-gray-600 mb-8" />
+            <hr className="w-full border-t border-gray-600 mb-12" />
 
             <div className="flex flex-col md:flex-row items-center justify-center space-x-8 space-y-8 md:space-y-0">
                 {/* Left Column: Text Box */}
-                <div className="text-box flex-1 text-center md:text-left">
+                <div className="text-box flex-1 text-center md:text-left pl-8">
                     <h1 className="text-4xl font-bold text-white mb-4">Hello, I'm Matthew!</h1>
                     <p className="text-lg text-white">
                         I am a 4th year Electrical and Computer Engineering student at Northeastern University. At this moment, I'm currently on co-op at the SINRG Laboratory and working as a software developer at ZOR!. I'm passionate about machine learning, embedded software, and electrical design. My goal is to combine these interests in pursuit of a PhD, applying them to AI wearables in health. Feel free to explore my work in this website and connect with me through the links below.
