@@ -66,7 +66,7 @@ export default function Matthew() {
             {/* Divider Line */}
             <hr className="w-full border-t border-gray-600 mb-16" />
 
-            <div className="<div className="flex flex-col md:flex-row items-center justify-center space-x-8 space-y-8 md:space-y-0">
+            <div className="flex flex-col md:flex-row items-center justify-center space-x-8 space-y-8 md:space-y-0">
                 {/* Left Column: Text Box */}
                 <div className="text-box flex-1 text-center md:text-left pl-8">
                     <h1 className="text-4xl font-bold text-white mb-4">Hello, I'm Matthew!</h1>
