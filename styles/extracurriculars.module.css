@@ -11,3 +11,10 @@
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
+
+.extracurriculars-position {
+  font-weight: 600;
+  color: #2B70C9;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
