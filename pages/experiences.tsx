@@ -54,6 +54,7 @@ export default function Experiences() {
             title: "MENTIS Laboratory",
 	position: "Undergraduate Researcher",
             description: "Used PyTorch to implement a deep learning model for single-image super-resolution, enhancing omnidirectional camera data",
+			liveLink: "https://mentis.info"
         }
     ];
 
@@ -88,6 +89,7 @@ export default function Experiences() {
                     padding: 20px;
                     opacity: 0;
                     transition: opacity 0.5s ease-in-out;
+					margin-bottom: 1rem
                 }
 
                 .experiences-container.visible {
