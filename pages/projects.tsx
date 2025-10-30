@@ -104,7 +104,7 @@ export default function Projects() {
             <ItemPage Icon={FaLaptopCode} title="My Projects" color="#2B70C9">
                 <div className="projects-grid">
                     {projects.map((project, index) => (
-                        <div key={index} className="project-item">
+                        <div key={index} className="project-item" style={{ marginBottom: "1rem" }>
                             <h3>{project.title}</h3>
                             <p className="project-description">{project.description}</p>
                             <div className="project-technologies">
