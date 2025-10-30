@@ -49,6 +49,14 @@ a:hover {
   white-space: nowrap;
 }
 
+.text-box {
+  padding-left: 2rem;
+}
+
+hr {
+  margin-bottom: 3rem;
+}
+
 /* Smooth transitions for animations */
 .transition {
   transition: all 0.3s ease-in-out;
