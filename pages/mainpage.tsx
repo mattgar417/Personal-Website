@@ -168,7 +168,7 @@ export default function Matthew() {
                     font-size: 1.1rem;
                     font-weight: 600;
                     padding: 0.6rem 1.5rem;
-                    text-align: center;
+                    text-align: right;
                     cursor: pointer;
                     transition: background-color 0.3s ease;
                 }
