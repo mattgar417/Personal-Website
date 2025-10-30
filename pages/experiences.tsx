@@ -66,7 +66,7 @@ export default function Experiences() {
             <ItemPage Icon={FaBriefcase} title="My Experiences" color="#2B70C9">
                 <div className="experiences-grid">
                     {experiences.map((experience, index) => (
-                        <div key={index} className="experience-item">
+                        <div key={index} className="experience-item" style={{ marginBottom: "1rem" }>
                             <h3>{experience.title}</h3>
 			    <p className="experiences-position">{experience.position}</p>
                             <p className="experiences-description">{experience.description}</p>
