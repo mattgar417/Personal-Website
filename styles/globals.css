@@ -50,6 +50,7 @@ a:hover {
 }
 
 .text-box {
+  flex: .6;
   padding-left: 2rem;
 }
 
@@ -57,11 +58,9 @@ hr {
   margin-bottom: 2rem;
 }
 
-.text-box {
-  flex: 0.6;
-}
 .profile-picture {
-  flex: 0.4;
+  flex: .4;
+  padding-left: 2rem;
 }
 
 /* Smooth transitions for animations */
