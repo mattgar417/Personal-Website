@@ -1,6 +1,6 @@
 .extracurricular-grid {
   display: grid;
-  gap: 3rem;
+  gap: 4rem;
   grid-template-columns: 1fr;
   margin-top: 2rem;
 }
