@@ -64,7 +64,7 @@ export default function Matthew() {
             </div>
 
             {/* Divider Line */}
-            <hr className="w-full border-t border-gray-600 mb-12" />
+            <hr className="w-full border-t border-gray-600 mb-16" />
 
             <div className="flex flex-col md:flex-row items-center justify-center space-x-8 space-y-8 md:space-y-0">
                 {/* Left Column: Text Box */}
