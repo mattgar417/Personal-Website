@@ -50,7 +50,7 @@ export default function Extracurriculars() {
             <div className="playful-back-button" onClick={handleBackClick}>
                 <FaChevronLeft />
             </div>
-            <ItemPage Icon={FaUsers} title="Extracurriculars" color="#2B70C9">
+            <ItemPage Icon={FaUsers} title="My Extracurriculars" color="#2B70C9">
                 <div className="extracurricular-grid">
                     {extracurriculars.map((extracurricular, index) => (
                         <div key={index} className="extracurricular-item">
