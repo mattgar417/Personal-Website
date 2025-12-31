@@ -78,7 +78,7 @@ export default function Matthew() {
                 {/* Right Column: Profile Picture */}
                 <div className="profile-picture">
                     <Image
-                        src="Matthew Garcia.png"
+                        src="Matthew Garcia.jpg"
                         alt="Matthew's profile picture"
                         width={350}
                         height={500}
