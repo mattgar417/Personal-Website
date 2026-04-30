@@ -142,13 +142,15 @@ export default function Experiences() {
                 }
 
 				.experiences-grid {
-                    display: grid;
-                    grid-template-columns: repeat(1, 1fr);
-                    gap: 1.5rem;
-                    margin-top: 1rem;
+                    display: flex;
+    				flex-direction: column;
+    				align-items: flex-start;
+    				gap: 1.5rem;
+    				margin-top: 1rem;
                 }
 
                 .experience-card {
+					width: fit-content;
                     background: #2B2B2B;
                     border-radius: 12px;
                     overflow: hidden;
@@ -187,7 +189,6 @@ export default function Experiences() {
                     display: flex;
                     flex-direction: column;
                     gap: 0.5rem;
-                    flex: 1;
                 }
                 .card-title {
                     font-size: 1rem;
