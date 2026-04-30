@@ -145,8 +145,7 @@ export default function Projects() {
         								<Image
             								src={project.image}
             								alt={project.title}
-            								width={0}
-											height={0}
+            								fill
             								sizes="100vw"
             								className="card-image"
         								/>
