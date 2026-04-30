@@ -150,7 +150,6 @@ export default function Experiences() {
                 }
 
                 .experience-card {
-					width: fit-content;
                     background: #2B2B2B;
                     border-radius: 12px;
                     overflow: hidden;
@@ -166,7 +165,6 @@ export default function Experiences() {
 
 				.card-banner {
                     height: 260px;
-					width: 260px;
 					position: relative;
     				overflow: hidden;
                     display: flex;
@@ -174,7 +172,7 @@ export default function Experiences() {
                     justify-content: center;
                 }
 				.card-image {
-    				width: auto;
+    				width: 100%;
     				height: auto;
     				display: block;
 				}
@@ -202,7 +200,6 @@ export default function Experiences() {
                     margin: 0;
                     flex: 1;
                 }
-
 
 				.card-links {
                     display: flex;
