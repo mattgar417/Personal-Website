@@ -33,7 +33,7 @@ export default function Projects() {
     const projects: Projects[] = [
         {
             title: "Personal Website",
-            description: "My Portfolio Website",
+            description: "Website containing ,y experiences and projects",
             technologies: ["TypeScript", "Next.js", "React"],
             githubLink: "https://github.com/mattgar417Personal-Website",
 			image: "Personal-Website-Page.png",
@@ -89,7 +89,7 @@ export default function Projects() {
         },
         {
             title: "Electrocardiogram System",
-            description: "An analog and digital system able to filter and analyze an ECG system",
+            description: "An analog and digital system able to filter and analyze an ECG signal",
             technologies: ["Circuit Design", "Matlab"],
 	    	Link: "https://docs.google.com/document/d/152AmXvRAE57zt7r68lldgBgvrbklMp7Xmk-hy2SVsYg/edit?usp=sharing",
 			image: "EKG-Circuit.png",
@@ -97,7 +97,7 @@ export default function Projects() {
         },
         {
             title: "Smart City Resource Allocation",
-            description: "Allocates resources to various sectors of a digital smart city",
+            description: "An application able to allocate resources to various sectors of a digital smart city",
             technologies: ["C++"],
             githubLink: "https://github.com/mattgar417/Smart-City",
 			icon: FaRobot,
@@ -147,7 +147,8 @@ export default function Projects() {
             								alt={project.title}
             								width={0}
 											height={0}
-            								className="object-cover"
+            								sizes="100vw"
+            								className="card-image"
         								/>
     								) : (
         								<IconComponent className="card-icon" />
