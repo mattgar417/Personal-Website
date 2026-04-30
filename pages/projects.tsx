@@ -33,7 +33,7 @@ export default function Projects() {
     const projects: Projects[] = [
         {
             title: "Personal Website",
-            description: "Website containing ,y experiences and projects",
+            description: "Website containing my experiences and projects",
             technologies: ["TypeScript", "Next.js", "React"],
             githubLink: "https://github.com/mattgar417Personal-Website",
 			image: "Personal-Website-Page.png",
