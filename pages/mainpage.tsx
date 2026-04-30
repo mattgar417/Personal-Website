@@ -76,7 +76,7 @@ export default function Matthew() {
                 </div>
 
                 {/* Right Column: Profile Picture */}
-                <div className="flex-shrink-0 w-[350px] h-[350px] rounded-full overflow-hidden">
+                <div className="flex-shrink-0 relative w-[350px] h-[350px] rounded-full overflow-hidden">
                     <Image
                         src="Matthew Garcia.jpg"
                         alt="Matthew's profile picture"
