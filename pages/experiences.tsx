@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { FaChevronLeft, FaExternalLinkAlt, FaBriefcase } from 'react-icons/fa';
@@ -11,6 +12,8 @@ interface Experience {
     position: string;
     description?: string;
     liveLink?: string;
+	image?: string;
+	gradient: string;
 }
 
 export default function Experiences() {
@@ -28,34 +31,34 @@ export default function Experiences() {
     const experiences: Experience[] = [
         {
             title: "ZOR!",
-	position: "Software Engineer",
+			position: "Software Engineer",
             description: "Generating insights for ZOR!’s seizure monitoring app while developing AI pipeline for future prediction",
-	liveLink: "https://zor.llc",
+			liveLink: "https://zor.llc",
+			image: "ZOR-Logo.png",
+			gradient: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
         },
         {
             title: "SINRG Laboratory",
-	position: "AJC Merit Research Scholar",
+			position: "AJC Merit Research Scholar",
             description: "Developed embedded systems for XR/AI smart glasses and created a backend to stream sensor/audio data from Arduino to LLMs and STT services",
-	liveLink: "https://sinrg.org",
+			liveLink: "https://sinrg.org",
+			image: "SINRG-Logo.png",
+			gradient: "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)",
         },
         {
             title: "National Energy Technology Laboratory",
-	position: "Research Associate",
+			position: "Research Associate",
             description: "Characterized simulated acoustic signals using machine learning to develop early kick detection algorithm in offshore wells as part of the Mickey Leland Energy Fellowship Program",
-	liveLink: "https://orise.orau.gov/mlef/default.html",
+			image: "NETL-Logo.png",
+			gradient: "linear-gradient(135deg, #1a0533 0%, #2d1b69 50%, #11998e 100%)",
         },
         {
             title: "Mayflower Communications Company",
-	position: "Software Engineering Co-op",
+			position: "Software Engineering Co-op",
             description: "Programmed DSP algorithms in C to detect and neutralize GPS spoofers; ported a ResNet from Python to C for real-time signal classification",
-	liveLink: "https://www.mayflowercom.com",
+			image: "Mayflower-Logo.png",
+			gradient: "linear-gradient(135deg, #1a0000 0%, #4a0000 50%, #800000 100%)",
         },
-        {
-            title: "MENTIS Laboratory",
-	position: "Undergraduate Researcher",
-            description: "Used PyTorch to implement a deep learning model for single-image super-resolution, enhancing omnidirectional camera data",
-			liveLink: "https://mentis.info"
-        }
     ];
 
     return (
@@ -66,21 +69,37 @@ export default function Experiences() {
             <ItemPage Icon={FaBriefcase} title="My Experiences" color="#2B70C9">
                 <div className="experiences-grid">
                     {experiences.map((experience, index) => (
-                        <div key={index} className="experience-item" style={{ marginBottom: "1rem" }}>
-                            <h3>{experience.title}</h3>
-			    <p className="experiences-position">{experience.position}</p>
-                            <p className="experiences-description">{experience.description}</p>
-                            {experience.liveLink && (
-                               <div className="experience-links">
-      			<a href={experience.liveLink} target="_blank" rel="noopener noreferrer">
-        			   <FaExternalLinkAlt /> Link
-      			</a>
-    		     </div>
-  		)}
-                        </div>
-                    ))}
-                </div>
+						<div key={index} className="experience-card">
+								<div className="card-banner" style={!experience.image ? { background: experience.gradient } : {}}>
+                                	{experience.image ? (
+        								<Image
+            								src={experience.image}
+            								alt={experience.title}
+            								fill
+            								sizes="100vw"
+            								className="card-image"
+        								/>
+    								) : null}
+                       			</div>
+
+							<div className="card-content">
+                            	<h3>{experience.title}</h3>
+		     					<p className="experiences-position">{experience.position}</p>
+                            	<p className="experiences-description">{experience.description}</p>
+                            
+								{experience.liveLink && (
+                               	<div className="experience-links">
+      								<a href={experience.liveLink} target="_blank" rel="noopener noreferrer">
+        			   					<FaExternalLinkAlt /> Link
+      								</a>
+    		     			  	</div>
+  		     					)}
+                			</div>
+						</div>
+                  	))}
+            	</div>
             </ItemPage>
+			
             <style jsx>{`
                 .experiences-container {
                     width: 100%;
@@ -120,6 +139,90 @@ export default function Experiences() {
                 .playful-back-button :global(svg) {
                     color: white;
                     font-size: 24px;
+                }
+
+				.experiences-grid {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 1.5rem;
+                    margin-top: 1rem;
+                }
+
+                .experience-card {
+                    background: #2B2B2B;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    transition: transform 0.2s ease, box-shadow 0.2s ease;
+                    border: 1px solid #3a3a3a;
+                }
+                .experience-card:hover {
+                    transform: translateY(-4px);
+                    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+                }
+
+				.card-banner {
+                    height: 260px;
+					width: 260px;
+					position: relative;
+    				overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+				.card-image {
+    				width: auto;
+    				height: auto;
+    				display: block;
+				}
+                .card-icon {
+                    font-size: 3rem;
+                    color: rgba(255, 255, 255, 0.85);
+                    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
+                }
+
+				.card-content {
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    flex: 1;
+                }
+                .card-title {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    color: #ffffff;
+                    margin: 0;
+                }
+                .card-description {
+                    font-size: 0.8rem;
+                    color: #aaaaaa;
+                    margin: 0;
+                    flex: 1;
+                }
+
+
+				.card-links {
+                    display: flex;
+                    gap: 0.5rem;
+                    margin-top: 0.5rem;
+                }
+                .card-link {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.3rem;
+                    font-size: 0.78rem;
+                    padding: 4px 12px;
+                    border-radius: 6px;
+                    text-decoration: none;
+                    font-weight: 600;
+                    transition: opacity 0.2s;
+                }
+                .card-link:hover { opacity: 0.8; }
+                .ext-link {
+                    background: #2B70C9;
+                    color: #ffffff;
                 }
 
                 @media (max-width: 768px) {
