@@ -63,11 +63,11 @@ export default function Extracurriculars() {
                 <div className="extracurricular-grid">
                     {extracurriculars.map((extracurricular, index) => (
 						<div key={index} className="extracurricular-card">
-								<div className="card-banner" style={!project.image ? { background: project.gradient } : {}}>
+								<div className="card-banner" style={!extracurricular.image ? { background: extracurricular.gradient } : {}}>
                                 	{project.image ? (
         								<Image
-            								src={project.image}
-            								alt={project.title}
+            								src={extracurricular.image}
+            								alt={extracurricular.title}
             								fill
             								sizes="100vw"
             								className="card-image"
