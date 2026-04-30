@@ -64,8 +64,8 @@ export default function Extracurriculars() {
                 <div className="extracurricular-grid">
                     {extracurriculars.map((extracurricular, index) => (
 						<div key={index} className="extracurricular-card">
-								<div className="card-banner" style={!extracurricular.image}>
-                                	{extracurricular.image (
+								<div className="card-banner" style={!extracurricular.image ? { background: extracurricular.gradient } : {}}>
+                                	{extracurricular.image ? (
         								<Image
             								src={extracurricular.image}
             								alt={extracurricular.title}
@@ -73,7 +73,7 @@ export default function Extracurriculars() {
             								sizes="100vw"
             								className="card-image"
         								/>
-    								)
+    								) : null}
                        			</div>
 
 							<div className="card-content">
@@ -134,14 +134,14 @@ export default function Extracurriculars() {
                     font-size: 24px;
                 }
 
-				.projects-grid {
+				.extracurriculars-grid {
                     display: grid;
                     grid-template-columns: repeat(1, 1fr);
                     gap: 1.5rem;
                     margin-top: 1rem;
                 }
 
-                .project-card {
+                .extracurricular-card {
                     background: #2B2B2B;
                     border-radius: 12px;
                     overflow: hidden;
@@ -150,7 +150,7 @@ export default function Extracurriculars() {
                     transition: transform 0.2s ease, box-shadow 0.2s ease;
                     border: 1px solid #3a3a3a;
                 }
-                .project-card:hover {
+                .extracurricular-card:hover {
                     transform: translateY(-4px);
                     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
                 }
