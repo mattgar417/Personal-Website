@@ -66,23 +66,29 @@ export default function Matthew() {
             {/* Divider Line */}
             <hr className="w-full border-t border-gray-600 mb-16" />
 
-            <div className="flex flex-col md:flex-row items-center justify-center space-x-8 space-y-8 md:space-y-0">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
                 {/* Left Column: Text Box */}
-                <div className="text-box flex-1 text-center md:text-left pl-8">
+                <div className="flex-1 text-center md:text-left">
                     <h1 className="text-4xl font-bold text-white mb-4">Hello, I'm Matthew!</h1>
                     <p className="text-lg text-white">
-                        I am a 4th year Electrical and Computer Engineering student at Northeastern University. At this moment, I currently work as a researcher at the SINRG Laboratory and as a software developer at ZOR!. I'm passionate about machine learning, ubiquitous computing, and human-computer interaction. My goal is to combine these interests, applying them to AI wearables in health. Outside of work, I enjoy reading, writing essays, and working on my own projects. Feel free to explore my work in this website and connect with me through the links below!
-                    </p>
-                </div>
+                        I am a 4th year Electrical and Computer Engineering student at Northeastern University. 
+                        At this moment, I currently work as a researcher at the SINRG Laboratory and as a 
+                        software developer at ZOR!. I'm passionate about machine learning, ubiquitous computing, 
+                        and human-computer interaction. My goal is to combine these interests, applying them to 
+                        AI wearables in health. Outside of work, I enjoy reading, writing essays, and working on 
+                        my own projects. Feel free to explore my work in this website and connect with me through 
+                        the links below!
+                 </p>
+            </div>
 
                 {/* Right Column: Profile Picture */}
-                <div className="flex-shrink-0 relative w-[350px] h-[350px] rounded-full overflow-hidden">
+                <div className="flex-shrink-0 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden order-first md:order-last">
                     <Image
                         src="Matthew Garcia.jpg"
                         alt="Matthew's profile picture"
                         width={350}
                         height={500}
-                        className="object-cover object-top"
+                        className="w-full h-full object-cover object-top"
                     />
                 </div>
             </div>
