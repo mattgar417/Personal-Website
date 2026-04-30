@@ -62,7 +62,7 @@ export default function Extracurriculars() {
             <ItemPage Icon={FaUsers} title="My Extracurriculars" color="#2B70C9">
                 <div className="extracurricular-grid">
                     {extracurriculars.map((extracurricular, index) => (
-						<div key={index} className="project-card">
+						<div key={index} className="extracurricular-card">
 								<div className="card-banner" style={!project.image ? { background: project.gradient } : {}}>
                                 	{project.image ? (
         								<Image
@@ -75,19 +75,20 @@ export default function Extracurriculars() {
     								)
                        			</div>
 
-						<div className="card-content">
-                            <h3>{extracurricular.title}</h3>
-		     				<p className="extracurriculars-position">{extracurricular.position}</p>
-                            <p className="extracurriculars-description">{extracurricular.description}</p>
+							<div className="card-content">
+                            	<h3>{extracurricular.title}</h3>
+		     					<p className="extracurriculars-position">{extracurricular.position}</p>
+                            	<p className="extracurriculars-description">{extracurricular.description}</p>
                             
-							{extracurricular.liveLink && (
-                               <div className="extracurricular-links">
-      							<a href={extracurricular.liveLink} target="_blank" rel="noopener noreferrer">
-        			   				<FaExternalLinkAlt /> Link
-      							</a>
-    		     			  </div>
-  		     				)}
-                		</div>
+								{extracurricular.liveLink && (
+                               	<div className="extracurricular-links">
+      								<a href={extracurricular.liveLink} target="_blank" rel="noopener noreferrer">
+        			   					<FaExternalLinkAlt /> Link
+      								</a>
+    		     			  	</div>
+  		     					)}
+                			</div>
+						</div>
                   	))}
             	</div>
             </ItemPage>
