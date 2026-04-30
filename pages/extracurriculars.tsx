@@ -64,7 +64,7 @@ export default function Extracurriculars() {
                     {extracurriculars.map((extracurricular, index) => (
 						<div key={index} className="extracurricular-card">
 								<div className="card-banner" style={!extracurricular.image ? { background: extracurricular.gradient } : {}}>
-                                	{project.image ? (
+                                	{extracurricular.image ? (
         								<Image
             								src={extracurricular.image}
             								alt={extracurricular.title}
