@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { FaChevronLeft, FaExternalLinkAlt, FaUsers } from 'react-icons/fa';
