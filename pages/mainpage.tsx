@@ -76,13 +76,14 @@ export default function Matthew() {
                 </div>
 
                 {/* Right Column: Profile Picture */}
-                <div className="profile-picture">
+                <div className="profile-picture flex-shrink-0">
                     <Image
                         src="Matthew Garcia.jpg"
                         alt="Matthew's profile picture"
                         width={350}
-                        height={500}
-                        className="rounded-full"
+                        height={350}
+                        className="rounded-full object-cover"
+                        style={{ width: '350px', height: '350px' }}
                     />
                 </div>
             </div>
