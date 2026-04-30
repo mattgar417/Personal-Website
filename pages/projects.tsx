@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { FaChevronLeft, FaExternalLinkAlt, FaGithub, FaLaptopCode, FARobot } from 'react-icons/fa';
+import { FaChevronLeft, FaExternalLinkAlt, FaGithub, FaLaptopCode, FaRobot } from 'react-icons/fa';
 import ItemPage from '../components/ItemPage';
 import '../styles/projects.module.css';
 
