@@ -142,9 +142,8 @@ export default function Experiences() {
                 }
 
 				.experiences-grid {
-                    display: flex;
-    				flex-direction: column;
-    				align-items: flex-start;
+                    display: grid;
+    				grid-template-columns: repeat(3, 1fr);
     				gap: 1.5rem;
     				margin-top: 1rem;
                 }
