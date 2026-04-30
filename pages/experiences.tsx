@@ -56,7 +56,7 @@ export default function Experiences() {
             title: "Mayflower Communications Company",
 			position: "Software Engineering Co-op",
             description: "Programmed DSP algorithms in C to detect and neutralize GPS spoofers; ported a ResNet from Python to C for real-time signal classification",
-			image: "Mayflower-Logo.png",
+			image: "Mayflower Logo.png",
 			gradient: "linear-gradient(135deg, #1a0000 0%, #4a0000 50%, #800000 100%)",
         },
     ];
