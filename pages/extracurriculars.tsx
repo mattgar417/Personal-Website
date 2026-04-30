@@ -44,7 +44,7 @@ export default function Extracurriculars() {
 			liveLink: "https://aineu.org",
 			image: "AINU-Logo.png",
 			gradient: "linear-gradient(135deg, #1a0533 0%, #2d1b69 50%, #11998e 100%)",
-        }
+        },
         {
             title: "SHPE",
 			position: "Treasurer",
