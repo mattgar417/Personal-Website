@@ -157,6 +157,7 @@ export default function Extracurriculars() {
 
 				.card-banner {
                     height: 260px;
+					width: 260px;
 					position: relative;
     				overflow: hidden;
                     display: flex;
