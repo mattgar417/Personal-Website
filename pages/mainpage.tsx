@@ -71,7 +71,7 @@ export default function Matthew() {
                 <div className="text-box flex-1 text-center md:text-left pl-8">
                     <h1 className="text-4xl font-bold text-white mb-4">Hello, I'm Matthew!</h1>
                     <p className="text-lg text-white">
-                        I am a 4th year Electrical and Computer Engineering student at Northeastern University. At this moment, I'm currently on co-op at the SINRG Laboratory and working as a software developer at ZOR!. I'm passionate about machine learning, embedded software, and electrical design. My goal is to combine these interests in pursuit of a PhD, applying them to AI wearables in health. Feel free to explore my work in this website and connect with me through the links below.
+                        I am a 4th year Electrical and Computer Engineering student at Northeastern University. At this moment, I currently work as a researcher at the SINRG Laboratory and as a software developer at ZOR!. I'm passionate about machine learning, ubiquitous computing, and human-computer interaction. My goal is to combine these interests, applying them to AI wearables in health. Outside of work, I enjoy reading, writing essays, and working on my own projects. Feel free to explore my work in this website and connect with me through the links below!
                     </p>
                 </div>
 
@@ -80,7 +80,8 @@ export default function Matthew() {
                     <Image
                         src="Matthew Garcia.jpg"
                         alt="Matthew's profile picture"
-                        fill
+                        width={350}
+                        height={500}
                         className="object-cover object-top"
                     />
                 </div>
