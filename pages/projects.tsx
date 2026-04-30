@@ -34,7 +34,7 @@ export default function Projects() {
         {
             title: "Personal Website",
             description: "My Portfolio Website",
-            technologies: ["Technologies Used: ", "TypeScript, ", "Next.js, ", "React"],
+            technologies: ["TypeScript", "Next.js", "React"],
             githubLink: "https://github.com/mattgar417Personal-Website",
 			image: "Personal-Website-Page.png",
 			gradient: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
@@ -42,7 +42,7 @@ export default function Projects() {
         {
             title: "Machine Learning Compendium",
             description: "Document compiling information about machine learning and deep learning algorithms with associated code",
-            technologies: ["Technologies Used: ", "Python"],
+            technologies: ["Python", "Pytorch"],
             Link: "https://docs.google.com/document/d/1qpSZIiWX02kXmSOw8MFxGwPH_y2vtTG1jvBXJrj75J0/edit?usp=sharing",
 			image: "NB-Confusion-Matrix.png",
 			gradient: "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)",
@@ -50,7 +50,7 @@ export default function Projects() {
         {
             title: "Research Paper Extraction Tool",
             description: "Tool to extract and analyze data from research papers",
-            technologies: ["Technologies Used: ", "Python, ", "HTML"],
+            technologies: ["Python", "Pytorch", "HTML"],
             githubLink: "https://github.com/mattgar417/AI-Research-Tool",
 			icon: FaRobot,
 			gradient: "linear-gradient(135deg, #1a0533 0%, #2d1b69 50%, #11998e 100%)",
@@ -58,7 +58,7 @@ export default function Projects() {
 		{
             title: "The Curse of La Llorona",
             description: "Interactive board game based off of Mexican folklore",
-            technologies: ["Technologies Used: ", "C++, ", "Arduino"],
+            technologies: ["C++", "Arduino"],
             githubLink: "https://github.com/mattgar417/Curse-Of-LaLlorona",
 			image: "Llorona-Card.png",
 			gradient: "linear-gradient(135deg, #1a0000 0%, #4a0000 50%, #800000 100%)",
@@ -66,7 +66,7 @@ export default function Projects() {
         {
             title: "Mecha Mayhem",
             description: "Educational and interactive game presented at the Boston’s Children Museum",
-            technologies: ["Technologies Used: ", "C++, ", "Arduino, ", "Processing"],
+            technologies: ["C++ ", "Arduino", "Processing"],
             githubLink: "https://github.com/mattgar417/Mecha-Mayhem",
 			image: "Mecha-Mayhem.png",
 			gradient: "linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 50%, #333 100%)",
@@ -74,7 +74,7 @@ export default function Projects() {
         {
             title: "Sudoku Generator",
             description: "Generates and populates a solvable sudoku grid",
-            technologies: ["Technologies Used: ", "Python"],
+            technologies: ["Python"],
             githubLink: "https://github.com/mattgar417/Sudoku-Generator",
 			image: "Generated-Sudoku-Grid.png",
 			gradient: "linear-gradient(135deg, #001f3f 0%, #003366 50%, #0055a5 100%)",
@@ -82,7 +82,7 @@ export default function Projects() {
         {
             title: "Omnidirectional Super-Resolution Reconstruction Application",
             description: "Performs single image super-resolution on omnidirectional cameras, reconstructing images from low to high resolution",
-            technologies: ["Technologies Used: ", "Python, ", "Pytorch"],
+            technologies: ["Python", "Pytorch"],
             githubLink: "https://github.com/mattgar417/Omnidirectional-Super-Resolution",
 			image: "EDSR-Diagram.png",
 			gradient: "linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)",
@@ -90,7 +90,7 @@ export default function Projects() {
         {
             title: "Electrocardiogram System",
             description: "An analog and digital system able to filter and analyze an ECG system",
-            technologies: ["Technologies Used: ", "Circuit Design, ", "Matlab"],
+            technologies: ["Circuit Design", "Matlab"],
 	    	Link: "https://docs.google.com/document/d/152AmXvRAE57zt7r68lldgBgvrbklMp7Xmk-hy2SVsYg/edit?usp=sharing",
 			image: "EKG-Circuit.png",
 			gradient: "linear-gradient(135deg, #004d00 0%, #006600 50%, #008000 100%)",
@@ -98,15 +98,15 @@ export default function Projects() {
         {
             title: "Smart City Resource Allocation",
             description: "Allocates resources to various sectors of a digital smart city",
-            technologies: ["Technologies Used: ", "C++"],
+            technologies: ["C++"],
             githubLink: "https://github.com/mattgar417/Smart-City",
-			image: "EDSR-Diagram.png",
+			icon: FaRobot,
 			gradient: "linear-gradient(135deg, #1a1a00 0%, #333300 50%, #4d4d00 100%)",
         },
         {
             title: "RISC-V Architecture",
             description: "Simulates and tests the architecture of a RISC-V processor",
-            technologies: ["Technologies Used: ", "SystemVerilog, ", "RISC-V"],
+            technologies: ["SystemVerilog, ", "RISC-V"],
             githubLink: "https://github.com/mattgar417/RISCV-Architecture",
 			image: "RISCV-Board.jpg",
 			gradient: "linear-gradient(135deg, #1a001a 0%, #330033 50%, #4d004d 100%)",
@@ -114,7 +114,7 @@ export default function Projects() {
         {
             title: "Smart Glasses",
             description: "XR Glasses that interacts with speakers and microphones, connecting via Bluetooth to an app to access LLMs",
-            technologies: ["Technologies Used: ", "C++, ", "Arduino, ", "Python, ", "Javascript", "Kotlin"],
+            technologies: ["C++", "Arduino", "Python", "Javascript", "Kotlin"],
             githubLink: "https://github.com/SINRG-Lab",
 			image: "Smart-Glasses.png",
 			gradient: "linear-gradient(135deg, #001a33 0%, #003366 50%, #2B70C9 100%)",
@@ -122,7 +122,7 @@ export default function Projects() {
         {
        	    title: "ZOR! - Seizure Monitoring App",
             description: "iOS application that visualizes seizure patterns and generates insights",
-            technologies: ["Technologies Used: ", "Python, ", "Pytorch"],
+            technologies: ["Python", "Pytorch"],
             githubLink: "https://github.com/ZOR-app",
 			image: "ZOR-Trends-Page.png",
 			gradient: "linear-gradient(135deg, #1a0d00 0%, #4d2600 50%, #804000 100%)",
@@ -145,7 +145,8 @@ export default function Projects() {
         								<Image
             								src={project.image}
             								alt={project.title}
-            								fill
+            								width={0}
+											height={0}
             								className="object-cover"
         								/>
     								) : (
@@ -243,13 +244,18 @@ export default function Projects() {
                 }
 
 				.card-banner {
-                    height: 130px;
+                    height: 260px;
 					position: relative;
     				overflow: hidden;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                 }
+				.card-image {
+    				width: 100%;
+    				height: auto;
+    				display: block;
+				}
                 .card-icon {
                     font-size: 3rem;
                     color: rgba(255, 255, 255, 0.85);
