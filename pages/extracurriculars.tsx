@@ -37,6 +37,14 @@ export default function Extracurriculars() {
 			image: "IEEE-Logo.png",
 			gradient: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
         },
+		{
+            title: "AI NU",
+			position: "Director of Education",
+            description: "Served as the VP of Northeastern's AI club, planning hackathons, speaker events, bootcamps, and organizing projects",
+			liveLink: "https://aineu.org",
+			image: "AINU-Logo.png",
+			gradient: "linear-gradient(135deg, #1a0533 0%, #2d1b69 50%, #11998e 100%)",
+        }
         {
             title: "SHPE",
 			position: "Treasurer",
@@ -45,12 +53,12 @@ export default function Extracurriculars() {
 			image: "SHPE-Logo.png",
 			gradient: "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)",
         },
-        {
-            title: "AI NU",
-			position: "Director of Education",
-            description: "Served as the VP of Northeastern's AI club, planning hackathons, speaker events, bootcamps, and organizing projects",
-			liveLink: "https://aineu.org",
-			image: "AINU-Logo.png",
+		{
+            title: "URF",
+			position: "Ambassador",
+            description: "Represented Northeastern's Office of Undergraduate Research & Fellowships (URF) at various events, including orientations, classroom visits, panels, and workshops",
+			liveLink: "https://undergraduate.northeastern.edu/research",
+			image: "NEU-Logo.png",
 			gradient: "linear-gradient(135deg, #1a0533 0%, #2d1b69 50%, #11998e 100%)",
         }
     ];
@@ -136,7 +144,7 @@ export default function Extracurriculars() {
 
 				.extracurriculars-grid {
                     display: grid;
-                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-columns: repeat(2, 1fr);
                     gap: 1.5rem;
                     margin-top: 1rem;
                 }
