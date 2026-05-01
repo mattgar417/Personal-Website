@@ -153,6 +153,8 @@ export default function Matthew() {
                 }
 
                 .profile-picture {
+                    height: 350px;
+                    width: 350px;
                     position: relative;
                     z-index: 2;
                 }
