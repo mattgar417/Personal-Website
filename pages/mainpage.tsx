@@ -86,8 +86,7 @@ export default function Matthew() {
                     <Image
                         src="Matthew Garcia.jpg"
                         alt="Matthew's profile picture"
-                        width={350}
-                        height={500}
+                        fill
                         className="w-full h-full object-cover object-top"
                     />
                 </div>
