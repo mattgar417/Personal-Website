@@ -67,7 +67,7 @@ export default function Matthew() {
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 p-8">
                 {/* Left Column: Text Box */}
-                <div className="flex-1 text-center md:text-left">
+                <div className="w-2/3 text-left">
                     <h1 className="text-4xl font-bold text-white mb-4">Hello, I'm Matthew!</h1>
                     <p className="text-lg text-white">
                         I am a 4th year Electrical and Computer Engineering student at Northeastern University. 
@@ -81,14 +81,16 @@ export default function Matthew() {
             </div>
 
                 {/* Right Column: Profile Picture */}
-                <div className="flex-shrink-0 relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden">
-                    <Image
-                        src="Matthew Garcia.jpg"
-                        alt="Matthew's profile picture"
-                        width={320}
-                        height={320}
-                        className="w-full h-full object-cover object-top"
-                    />
+                <div className="w-1/3 flex justify-center items-center flex-shrink-0">
+                    <div className="w-64 h-64 rounded-full overflow-hidden">
+                        <Image
+                            src="Matthew Garcia.jpg"
+                            alt="Matthew's profile picture"
+                            width={320}
+                            height={320}
+                            className="w-full h-full object-cover object-top"
+                        />
+                    </div>
                 </div>
             </div>
 
