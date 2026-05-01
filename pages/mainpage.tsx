@@ -15,7 +15,6 @@ const matthewData = [
 ];
 
 const matthewBanner = [
-    {label: 'Home', path: '/mainpage'},
     { label: 'Experiences', path: '/experiences' },
     { label: 'Extracurriculars', path: '/extracurriculars' },
     { label: 'Projects', path: '/projects' },
@@ -66,7 +65,7 @@ export default function Matthew() {
             {/* Divider Line */}
             <hr className="w-full border-t border-gray-600 mb-16" />
 
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 p-8">
                 {/* Left Column: Text Box */}
                 <div className="flex-1 text-center md:text-left">
                     <h1 className="text-4xl font-bold text-white mb-4">Hello, I'm Matthew!</h1>
@@ -82,12 +81,12 @@ export default function Matthew() {
             </div>
 
                 {/* Right Column: Profile Picture */}
-                <div className="flex-shrink-0 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden order-first md:order-last">
+                <div className="flex-shrink-0 relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden">
                     <Image
                         src="Matthew Garcia.jpg"
                         alt="Matthew's profile picture"
                         fill
-                        className="w-full h-full object-cover object-top"
+                        className="object-cover object-top"
                     />
                 </div>
             </div>
