@@ -62,6 +62,9 @@ export default function Matthew() {
                 ))}
             </div>
 
+            {/* Divider */} 
+            <hr className="w-full border-t border-gray-600 mb-16" />
+
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: '3rem', padding: '3rem 8rem', width: '100%', boxSizing: 'border-box' }}>
                 {/* Left Column: Text Box */} 
                 <div style={{ flex: 1, maxWidth: '60%', textAlign: 'left' }}>
