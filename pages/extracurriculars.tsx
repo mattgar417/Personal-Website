@@ -190,7 +190,6 @@ export default function Extracurriculars() {
                     display: flex;
                     flex-direction: column;
                     gap: 0.5rem;
-                    flex: 1;
                 }
                 .card-title {
                     font-size: 1rem;
