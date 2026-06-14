@@ -176,9 +176,8 @@ export default function Extracurriculars() {
                     justify-content: center;
                 }
 				.card-image {
-    				width: auto;
-    				height: auto;
-    				display: block;
+    				object-fit: contain;
+					padding: 1rem;
 				}
                 .card-icon {
                     font-size: 3rem;
