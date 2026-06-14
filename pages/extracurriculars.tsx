@@ -64,6 +64,7 @@ export default function Extracurriculars() {
     ];
 
     return (
+		<div style={{ minHeight: '100vh', backgroundColor: '#1E1E1E', display: 'flex', justifyContent: 'center' }}>
         <div className={`extracurricular-container ${isVisible ? 'visible' : ''}`}>
             <div className="playful-back-button" onClick={handleBackClick}>
                 <FaChevronLeft />
@@ -105,7 +106,7 @@ export default function Extracurriculars() {
             <style jsx>{`
                 .extracurricular-container {
                     width: 100%;
-                    max-width: 1200px;
+                    max-width: 900px;
                     margin: 0 auto;
                     padding: 20px;
                     opacity: 0;
@@ -147,6 +148,9 @@ export default function Extracurriculars() {
                     grid-template-columns: repeat(2, 1fr);
                     gap: 1.5rem;
                     margin-top: 1rem;
+					max-width: 860px;  
+    				margin-left: auto; 
+    				margin-right: auto;
                 }
 
                 .extracurricular-card {
@@ -257,5 +261,6 @@ export default function Extracurriculars() {
                 }
             `}</style>
         </div>
+		</div>
     );
 }
