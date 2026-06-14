@@ -62,6 +62,7 @@ export default function Experiences() {
     ];
 
     return (
+		<div style={{ minHeight: '100vh', backgroundColor: '#1E1E1E', display: 'flex', justifyContent: 'center' }}>
         <div className={`experiences-container ${isVisible ? 'visible' : ''}`}>
             <div className="playful-back-button" onClick={handleBackClick}>
                 <FaChevronLeft />
@@ -103,7 +104,7 @@ export default function Experiences() {
             <style jsx>{`
                 .experiences-container {
                     width: 100%;
-                    max-width: 1200px;
+                    max-width: 900px;
                     margin: 0 auto;
                     padding: 20px;
                     opacity: 0;
@@ -146,6 +147,9 @@ export default function Experiences() {
     				grid-template-columns: repeat(2, 1fr);
     				gap: 1.5rem;
     				margin-top: 1rem;
+					max-width: 860px;  
+    				margin-left: auto; 
+    				margin-right: auto;
                 }
 
                 .experience-card {
@@ -171,9 +175,8 @@ export default function Experiences() {
                     justify-content: center;
                 }
 				.card-image {
-    				width: 100%;
-    				height: auto;
-    				display: block;
+    				object-fit: contain;
+					padding: 1rem;
 				}
                 .card-icon {
                     font-size: 3rem;
@@ -252,6 +255,7 @@ export default function Experiences() {
                     }
                 }
             `}</style>
+		</div>
         </div>
     );
 }
