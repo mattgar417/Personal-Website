@@ -50,7 +50,7 @@ export default function Matthew() {
     return (
         <div className="min-h-screen flex flex-col items-end gap-6 p-4 relative bg-[#1E1E1E] overflow-hidden">
             {/* Banner at the Top */}
-            <div className="flex justify-end space-x-8 mt-8 mb-8 w-full border-b border-gray-600 pb-4 pr-8">
+            <div className="flex justify-start space-x-8 mt-8 mb-8 w-full border-b border-gray-600 pb-4 pl-16">
                 {matthewBanner.map((item, index) => (
                     <div
                         key={index}
@@ -65,9 +65,9 @@ export default function Matthew() {
             {/* Divider Line */}
             <hr className="w-full border-t border-gray-600 mb-16" />
 
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8 p-8">
+            <div className="flex flex-row items-center justify-between gap-8 px-16 py-8">
                 {/* Left Column: Text Box */}
-                <div className="w-2/3 text-left">
+                <div className="flex-1 text-left">
                     <h1 className="text-4xl font-bold text-white mb-4">Hello, I'm Matthew!</h1>
                     <p className="text-lg text-white">
                         I am a 4th year Electrical and Computer Engineering student at Northeastern University. 
@@ -77,18 +77,26 @@ export default function Matthew() {
                         AI wearables in health. Outside of work, I enjoy reading, writing essays, and working on 
                         my own projects. Feel free to explore my work in this website and connect with me through 
                         the links below!
-                 </p>
-            </div>
+                    </p>
+                </div>
 
                 {/* Right Column: Profile Picture */}
-                <div className="w-1/3 flex justify-center items-center flex-shrink-0">
-                    <div className="w-64 h-64 rounded-full overflow-hidden">
+                <div className="flex-shrink-0 flex justify-center items-center">
+                    <div
+                        style={{
+                            width: '256px',
+                            height: '256px',
+                            borderRadius: '50%',
+                            overflow: 'hidden',
+                            border: '3px solid #3A3A3A',
+                        }}
+                    >
                         <Image
                             src="Matthew Garcia.jpg"
                             alt="Matthew's profile picture"
-                            width={320}
-                            height={320}
-                            className="w-full h-full object-cover object-top"
+                            width={256}
+                            height={256}
+                            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
                         />
                     </div>
                 </div>
