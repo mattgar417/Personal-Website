@@ -48,9 +48,9 @@ export default function Matthew() {
 };
 
     return (
-        <div className="min-h-screen flex flex-col p-4 relative bg-[#1E1E1E] overflow-hidden">
+        <div className="min-h-screen flex flex-col relative bg-[#1E1E1E] overflow-hidden">
             {/* Banner at the Top */}
-            <div className="flex justify-start space-x-8 mt-8 mb-8 w-full border-b border-gray-600 pb-4 pl-16">
+            <div className="flex justify-start space-x-8 mt-8 mb-8 w-full border-b border-gray-600 pb-4" style={{ paddingLeft: '8rem' }}>
                 {matthewBanner.map((item, index) => (
                     <div
                         key={index}
@@ -62,9 +62,9 @@ export default function Matthew() {
                 ))}
             </div>
 
-            <div className="flex flex-row items-center justify-between gap-8 px-16 py-8 w-full">
-                {/* Left Column: Text Box */}
-                <div className="flex-1 text-left">
+            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: '3rem', padding: '3rem 8rem', width: '100%', boxSizing: 'border-box' }}>
+                {/* Left Column: Text Box */} 
+                <div style={{ flex: 1, maxWidth: '60%', textAlign: 'left' }}>
                     <h1 className="text-4xl font-bold text-white mb-4">Hello, I'm Matthew!</h1>
                     <p className="text-lg text-white">
                         I am a 4th year Electrical and Computer Engineering student at Northeastern University. 
@@ -78,7 +78,7 @@ export default function Matthew() {
                 </div>
 
                 {/* Right Column: Profile Picture */}
-                <div className="flex-shrink-0 flex justify-center items-center">
+                <div style={{ flexShrink: 0, display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
                     <div
                         style={{
                             width: '256px',
@@ -100,7 +100,7 @@ export default function Matthew() {
             </div>
 
             {/* Icons below the picture/text box */}
-            <div className="flex justify-start flex-row flex-wrap gap-6 mt-8 w-full">
+            <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '1.5rem', marginTop: '0.5rem', paddingLeft: '8rem', paddingBottom: '3rem', width: '100%', boxSizing: 'border-box' }}>
                 {matthewData.map((item, index) => (
                     <div
                         key={index}
