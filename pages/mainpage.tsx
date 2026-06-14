@@ -48,7 +48,7 @@ export default function Matthew() {
 };
 
     return (
-        <div className="min-h-screen flex flex-col items-end gap-6 p-4 relative bg-[#1E1E1E] overflow-hidden">
+        <div className="min-h-screen flex flex-col p-4 relative bg-[#1E1E1E] overflow-hidden">
             {/* Banner at the Top */}
             <div className="flex justify-start space-x-8 mt-8 mb-8 w-full border-b border-gray-600 pb-4 pl-16">
                 {matthewBanner.map((item, index) => (
@@ -62,10 +62,7 @@ export default function Matthew() {
                 ))}
             </div>
 
-            {/* Divider Line */}
-            <hr className="w-full border-t border-gray-600 mb-16" />
-
-            <div className="flex flex-row items-center justify-between gap-8 px-16 py-8">
+            <div className="flex flex-row items-center justify-between gap-8 px-16 py-8 w-full">
                 {/* Left Column: Text Box */}
                 <div className="flex-1 text-left">
                     <h1 className="text-4xl font-bold text-white mb-4">Hello, I'm Matthew!</h1>
@@ -103,7 +100,7 @@ export default function Matthew() {
             </div>
 
             {/* Icons below the picture/text box */}
-            <div className="flex justify-center flex-row flex-wrap gap-6 mt-8">
+            <div className="flex justify-start flex-row flex-wrap gap-6 mt-8 w-full">
                 {matthewData.map((item, index) => (
                     <div
                         key={index}
