@@ -143,7 +143,7 @@ export default function Extracurriculars() {
                     font-size: 24px;
                 }
 
-				.extracurriculars-grid {
+				.extracurricular-grid {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     gap: 1.5rem;
