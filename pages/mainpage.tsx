@@ -68,10 +68,10 @@ export default function Matthew() {
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: '10rem', padding: '3rem 8rem', width: '100%', boxSizing: 'border-box' }}>
                 {/* Left Column: Text Box */} 
                 <div style={{ flex: 1, maxWidth: '60%', textAlign: 'left' }}>
-                    <h1 className="text-4xl font-bold text-white mb-8">Matthew Garcia
+                    <h1 className="text-4xl font-bold text-white mb-8" style={{ marginBottom: '8rem' }}>Matthew Garcia
                     
                     </h1>
-                    <p className="text-lg text-white mb-8">
+                    <p className="text-lg text-white mb-8" style={{ marginBottom: '8rem' }}>
                         I'm a 4th year Electrical and Computer Engineering student at Northeastern University. At the 
                         moment, I currently work at the ACT Lab under Professor Megan Hoffman, where my research focus 
                         is on guiding stable diffusion for generating digital fabrication images. Previously, I worked 
