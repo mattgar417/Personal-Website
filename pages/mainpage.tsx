@@ -68,7 +68,9 @@ export default function Matthew() {
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: '10rem', padding: '3rem 8rem', width: '100%', boxSizing: 'border-box' }}>
                 {/* Left Column: Text Box */} 
                 <div style={{ flex: 1, maxWidth: '60%', textAlign: 'left' }}>
-                    <h1 className="text-4xl font-bold text-white mb-4">Matthew Garcia</h1>
+                    <h1 className="text-4xl font-bold text-white mb-4">Matthew Garcia
+                    
+                    </h1>
                     <p className="text-lg text-white">
                         I'm a 4th year Electrical and Computer Engineering student at Northeastern University. At the 
                         moment, I currently work at the ACT Lab under Professor Megan Hoffman, where my research focus 
@@ -77,6 +79,7 @@ export default function Matthew() {
                         open-source platform for testing various AI modalities for smart glasses. In addition, I've also worked 
                         as a software engineer for a seizure monitoring startup, ZOR!, where I led the creation of an insights 
                         pipeline for users to track their seizure patterns and associated metrics.
+                        
                     </p>
 
                     <p className="text-lg text-white">
