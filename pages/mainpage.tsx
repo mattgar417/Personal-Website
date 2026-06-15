@@ -50,7 +50,7 @@ export default function Matthew() {
     return (
         <div className="min-h-screen flex flex-col relative bg-[#1E1E1E] overflow-hidden">
             {/* Banner at the Top */}
-            <div className="flex justify-start space-x-8 mt-8 mb-8 w-full border-b border-gray-600 pb-4" style={{ paddingLeft: '8rem' }}>
+            <div className="flex justify-end space-x-8 mt-8 mb-8 w-full border-b border-gray-600 pb-4" style={{ paddingRight: '8rem' }}>
                 {matthewBanner.map((item, index) => (
                     <div
                         key={index}
@@ -65,7 +65,7 @@ export default function Matthew() {
             {/* Divider */} 
             <hr className="w-full border-t border-gray-600 mb-16" />
 
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: '5rem', padding: '3rem 8rem', width: '100%', boxSizing: 'border-box' }}>
+            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: '10rem', padding: '3rem 8rem', width: '100%', boxSizing: 'border-box' }}>
                 {/* Left Column: Text Box */} 
                 <div style={{ flex: 1, maxWidth: '60%', textAlign: 'left' }}>
                     <h1 className="text-4xl font-bold text-white mb-4">Matthew Garcia</h1>
@@ -80,7 +80,7 @@ export default function Matthew() {
                     </p>
 
                     <p className="text-lg text-white">
-                        My core research interests lie in machine learning, ubiquitous computing, and human-computer interaction. 
+                        My core research interests lie in machine learning, mobile systems, ubiquitous computing, and human-computer interaction. 
                         My goal is to combine these interests, applying them to AI systems that are able to sense and reason within 
                         the physical world, whether that be in the design of fabrics or embedded within smart glasses. Outside of work, 
                         I enjoy reading, writing essays, and working on my own projects. Feel free to explore my work in this website and 
@@ -92,8 +92,8 @@ export default function Matthew() {
                 <div style={{ flexShrink: 0, display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
                     <div
                         style={{
-                            width: '256px',
-                            height: '256px',
+                            width: '320px',
+                            height: '320px',
                             borderRadius: '50%',
                             overflow: 'hidden',
                             border: '3px solid #3A3A3A',
