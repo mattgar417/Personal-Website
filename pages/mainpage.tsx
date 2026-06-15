@@ -92,8 +92,8 @@ export default function Matthew() {
                 <div style={{ flexShrink: 0, display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
                     <div
                         style={{
-                            width: '320px',
-                            height: '320px',
+                            width: '296px',
+                            height: '296px',
                             borderRadius: '50%',
                             overflow: 'hidden',
                             border: '3px solid #3A3A3A',
@@ -143,7 +143,7 @@ export default function Matthew() {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    gap: 0.6rem;
+                    gap: 0.9rem;
                     cursor: pointer;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
