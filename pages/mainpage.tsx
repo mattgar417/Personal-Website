@@ -65,18 +65,26 @@ export default function Matthew() {
             {/* Divider */} 
             <hr className="w-full border-t border-gray-600 mb-16" />
 
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: '3rem', padding: '3rem 8rem', width: '100%', boxSizing: 'border-box' }}>
+            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: '5rem', padding: '3rem 8rem', width: '100%', boxSizing: 'border-box' }}>
                 {/* Left Column: Text Box */} 
                 <div style={{ flex: 1, maxWidth: '60%', textAlign: 'left' }}>
-                    <h1 className="text-4xl font-bold text-white mb-4">Hello, I'm Matthew!</h1>
+                    <h1 className="text-4xl font-bold text-white mb-4">Matthew Garcia</h1>
                     <p className="text-lg text-white">
-                        I am a 4th year Electrical and Computer Engineering student at Northeastern University. 
-                        At this moment, I currently work as a researcher at the SINRG Laboratory and as a 
-                        software developer at ZOR!. I'm passionate about machine learning, ubiquitous computing, 
-                        and human-computer interaction. My goal is to combine these interests, applying them to 
-                        AI wearables in health. Outside of work, I enjoy reading, writing essays, and working on 
-                        my own projects. Feel free to explore my work in this website and connect with me through 
-                        the links below!
+                        I'm a 4th year Electrical and Computer Engineering student at Northeastern University. At the 
+                        moment, I currently work at the ACT Lab under Professor Megan Hoffman, where my research focus 
+                        is on guiding stable diffusion for generating digital fabrication images. Previously, I worked 
+                        as a researcher at the SINRG Lab under Professor Mallesham Dasari, where I contributed to an 
+                        open-source platform for testing various AI modalities for smart glasses. In addition, I've also worked 
+                        as a software engineer for a seizure monitoring startup, ZOR!, where I led the creation of an insights 
+                        pipeline for users to track their seizure patterns and associated metrics.
+                    </p>
+
+                    <p className="text-lg text-white">
+                        My core research interests lie in machine learning, ubiquitous computing, and human-computer interaction. 
+                        My goal is to combine these interests, applying them to AI systems that are able to sense and reason within 
+                        the physical world, whether that be in the design of fabrics or embedded within smart glasses. Outside of work, 
+                        I enjoy reading, writing essays, and working on my own projects. Feel free to explore my work in this website and 
+                        connect with me through the links below!
                     </p>
                 </div>
 
