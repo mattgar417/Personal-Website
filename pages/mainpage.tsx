@@ -73,7 +73,7 @@ export default function Matthew() {
                     </h1>
                     <p className="text-lg text-white mb-8" style={{ marginBottom: '2.5rem' }}>
                         I'm a 4th year Electrical and Computer Engineering student at Northeastern University. At the 
-                        moment, I currently work at the ACT Lab under Professor Megan Hoffman, where my research focus 
+                        moment, I currently work at the ACT Lab under Professor Megan Hofmann, where my research focus 
                         is on guiding stable diffusion for generating digital fabrication images. Previously, I worked 
                         as a researcher at the SINRG Lab under Professor Mallesham Dasari, where I contributed to an 
                         open-source platform for testing various AI modalities for smart glasses. In addition, I've also worked 
