@@ -31,21 +31,29 @@ export default function Projects() {
     };
 
     const projects: Projects[] = [
-        {
-            title: "Personal Website",
-            description: "Website containing my experiences and projects",
-            technologies: ["TypeScript", "Next.js", "React"],
-            githubLink: "https://github.com/mattgar417Personal-Website",
-			image: "Personal-Website-Page.png",
-			gradient: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+		{
+            title: "Smart Glasses",
+            description: "XR Glasses that interacts with speakers and microphones, connecting via Bluetooth to an app to access LLMs",
+            technologies: ["C++", "Arduino", "Python", "Javascript", "Kotlin"],
+            githubLink: "https://github.com/SINRG-Lab",
+			image: "Smart-Glasses.png",
+			gradient: "linear-gradient(135deg, #001a33 0%, #003366 50%, #2B70C9 100%)",
         },
         {
-            title: "Machine Learning Compendium",
-            description: "Document compiling information about machine learning and deep learning algorithms with associated code",
+       	    title: "ZOR! - Seizure Monitoring App",
+            description: "iOS application that visualizes seizure patterns and generates insights",
             technologies: ["Python", "Pytorch"],
-            Link: "https://docs.google.com/document/d/1qpSZIiWX02kXmSOw8MFxGwPH_y2vtTG1jvBXJrj75J0/edit?usp=sharing",
-			image: "NB-Confusion-Matrix.png",
-			gradient: "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)",
+            githubLink: "https://github.com/ZOR-app",
+			image: "ZOR-Trends-Page.png",
+			gradient: "linear-gradient(135deg, #1a0d00 0%, #4d2600 50%, #804000 100%)",
+        },
+		{
+            title: "Mecha Mayhem",
+            description: "Educational and interactive game presented at the Boston’s Children Museum",
+            technologies: ["C++ ", "Arduino", "Processing"],
+            githubLink: "https://github.com/mattgar417/Mecha-Mayhem",
+			image: "Mecha-Mayhem.png",
+			gradient: "linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 50%, #333 100%)",
         },
         {
             title: "Research Paper Extraction Tool",
@@ -62,14 +70,6 @@ export default function Projects() {
             githubLink: "https://github.com/mattgar417/Curse-Of-LaLlorona",
 			image: "Llorona-Card.png",
 			gradient: "linear-gradient(135deg, #1a0000 0%, #4a0000 50%, #800000 100%)",
-        },
-        {
-            title: "Mecha Mayhem",
-            description: "Educational and interactive game presented at the Boston’s Children Museum",
-            technologies: ["C++ ", "Arduino", "Processing"],
-            githubLink: "https://github.com/mattgar417/Mecha-Mayhem",
-			image: "Mecha-Mayhem.png",
-			gradient: "linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 50%, #333 100%)",
         },
         {
             title: "Sudoku Generator",
@@ -111,21 +111,21 @@ export default function Projects() {
 			image: "RISCV-Board.jpg",
 			gradient: "linear-gradient(135deg, #1a001a 0%, #330033 50%, #4d004d 100%)",
         },
-        {
-            title: "Smart Glasses",
-            description: "XR Glasses that interacts with speakers and microphones, connecting via Bluetooth to an app to access LLMs",
-            technologies: ["C++", "Arduino", "Python", "Javascript", "Kotlin"],
-            githubLink: "https://github.com/SINRG-Lab",
-			image: "Smart-Glasses.png",
-			gradient: "linear-gradient(135deg, #001a33 0%, #003366 50%, #2B70C9 100%)",
+		{
+            title: "Personal Website",
+            description: "Website containing my experiences and projects",
+            technologies: ["TypeScript", "Next.js", "React"],
+            githubLink: "https://github.com/mattgar417Personal-Website",
+			image: "FaRobot",
+			gradient: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
         },
         {
-       	    title: "ZOR! - Seizure Monitoring App",
-            description: "iOS application that visualizes seizure patterns and generates insights",
+            title: "Machine Learning Compendium",
+            description: "Document compiling information about machine learning and deep learning algorithms with associated code",
             technologies: ["Python", "Pytorch"],
-            githubLink: "https://github.com/ZOR-app",
-			image: "ZOR-Trends-Page.png",
-			gradient: "linear-gradient(135deg, #1a0d00 0%, #4d2600 50%, #804000 100%)",
+            Link: "https://docs.google.com/document/d/1qpSZIiWX02kXmSOw8MFxGwPH_y2vtTG1jvBXJrj75J0/edit?usp=sharing",
+			image: "NB-Confusion-Matrix.png",
+			gradient: "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)",
         },
     ];
 
