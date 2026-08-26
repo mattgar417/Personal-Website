@@ -50,11 +50,11 @@ export default function Matthew() {
     return (
         <div className="min-h-screen flex flex-col relative bg-[#1E1E1E] overflow-hidden">
             {/* Banner at the Top */}
-            <div className="flex justify-end space-x-8 mt-8 mb-8 w-full border-b border-gray-600 pb-4" style={{ paddingRight: '8rem', paddingLeft: '8rem' }}>
+            <div className="flex flex-wrap justify-center sm:justify-end gap-3 sm:gap-8 mt-8 mb-8 w-full border-b border-gray-600 pb-4 px-6 sm:px-12 md:px-32" style={{ paddingRight: '8rem', paddingLeft: '8rem' }}>
                 {matthewBanner.map((item, index) => (
                     <div
                         key={index}
-                        className="banner-item text-white bg-[#2B2B2B] px-4 py-2 rounded-full cursor-pointer hover:bg-[#3A3A3A]"
+                        className="banner-item text-white bg-[#2B2B2B] px-4 py-2 rounded-full cursor-pointer hover:bg-[#3A3A3A] whitespace-nowrap"
                         onClick={() => handleItemClick(item.path, undefined, undefined)}
                     >
                         {item.label}
@@ -65,13 +65,13 @@ export default function Matthew() {
             {/* Divider */} 
             <hr className="w-full border-t border-gray-600 mb-16" />
 
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: '10rem', padding: '3rem 8rem', width: '100%', boxSizing: 'border-box' }}>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16 lg:gap-32 px-6 sm:px-12 md:px-24 py-8 md:py-12 w-full max-w-7xl mx-auto box-border">
                 {/* Left Column: Text Box */} 
-                <div style={{ flex: 1, maxWidth: '60%', textAlign: 'left' }}>
-                    <h1 className="text-4xl font-bold text-white mb-8" style={{ marginBottom: '2.5rem' }}>Matthew Garcia
-                    
+                <div className="flex-1 max-w-full md:max-w-[60%] text-center md:text-left">
+                    <h1 className="text-3xl sm:text-4xl font-bold text-white mb-6 md:mb-10" style={{ marginBottom: '2.5rem' }}>Matthew Garci
                     </h1>
-                    <p className="text-lg text-white mb-8" style={{ marginBottom: '2.5rem' }}>
+                    
+                    <p className="text-base sm:text-lg text-white mb-6 md:mb-10" style={{ marginBottom: '2.5rem' }}>
                         Hello! I'm a 4th year Electrical and Computer Engineering student at Northeastern University. At the 
                         moment, I currently work at the ACT Lab under Professor Megan Hofmann, where my research focus 
                         is on guiding stable diffusion for generating digital fabrication images. Previously, I worked 
@@ -82,7 +82,7 @@ export default function Matthew() {
                         
                     </p>
 
-                    <p className="text-lg text-white">
+                    <p className="text-base sm:text-lg text-white">
                         My core research interests lie in machine learning, mobile systems, ubiquitous computing, and human-computer interaction. 
                         My goal is to combine these interests, applying them to AI systems that are able to sense and reason within 
                         the physical world, whether that be in the design of fabrics or embedded within smart glasses. Outside of work, 
@@ -92,36 +92,26 @@ export default function Matthew() {
                 </div>
 
                 {/* Right Column: Profile Picture */}
-                <div style={{ flexShrink: 0, display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
-                    <div
-                        style={{
-                            width: '296px',
-                            height: '296px',
-                            borderRadius: '50%',
-                            overflow: 'hidden',
-                            border: '3px solid #3A3A3A',
-                        }}
-                    >
+                <div className="flex-shrink-0 flex justify-center items-start">
+                    <div className="rounded-full overflow-hidden border-[3px] border-[#3A3A3A] w-[min(60vw,296px)] h-[min(60vw,296px)] md:w-[296px] md:h-[296px]">
                         <Image
-                            src="Matthew Garcia.jpg"
+                            src="/Matthew Garcia.jpg"
                             alt="Matthew's profile picture"
-                            width={256}
-                            height={256}
-                            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
+                            width={296}
+                            height={296}
+                            className="w-full h-full object-cover object-top"
                         />
                     </div>
                 </div>
             </div>
 
             {/* Icons below the picture/text box */}
-            <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '1.5rem', marginTop: '0.5rem', paddingLeft: '8rem', paddingBottom: '3rem', width: '100%', boxSizing: 'border-box' }}>
+            <div className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6 mt-2 pb-10 md:pb-12 px-6 sm:px-12 md:px-24 w-full max-w-7xl mx-auto box-border">
                 {matthewData.map((item, index) => (
                     <div
                         key={index}
                         className="about-me-item"
-                        style={{
-                            borderBottom: `6px solid ${item.color}`,
-                        }}
+                        style={{ borderBottom: `6px solid ${item.color}` }}
                         onClick={() => handleItemClick(undefined, item.externalLink, item.action)}
                     >
                         <div className="icon-wrapper" style={{ color: item.color }}>
@@ -150,34 +140,23 @@ export default function Matthew() {
                     cursor: pointer;
                     transition: transform 0.3s ease, box-shadow 0.3s ease;
                     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-                    border-bottom-width: 6px;
                     white-space: nowrap;
                     height: 60px;
                 }
 
-
                 .about-me-item:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.05);
                     box-shadow: 0 12px 24px rgba(0,0,0,0.3);
                 }
 
                 .icon-wrapper {
-                    font-size: 2rem;
-                    margin-bottom: 0.4rem;
+                    font-size: clamp(1.4rem, 2vw, 2rem);
                 }
 
                 .item-label {
-                    font-size: 0.9rem;
+                    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
                     font-weight: 700;
-                    margin-top: 0.4rem;
                     color: #FFFFFF;
-                }
-
-                .profile-picture {
-                    height: 350px;
-                    width: 350px;
-                    position: relative;
-                    z-index: 2;
                 }
 
                 .copied-message {
@@ -193,32 +172,15 @@ export default function Matthew() {
                 }
 
                 .banner-item {
-                    font-size: 1.1rem;
+                    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
                     font-weight: 600;
                     padding: 0.6rem 1.5rem;
-                    text-align: right;
                     cursor: pointer;
                     transition: background-color 0.3s ease;
                 }
 
                 .banner-item:hover {
                     background-color: #3A3A3A;
-                }
-
-                @media (max-width: 768px) {
-                    .text-box {
-                        text-align: center;
-                    }
-
-                    .profile-picture {
-                        margin-top: 20px;
-                    }
-                }
-
-                @media (max-width: 480px) {
-                    .text-box {
-                        font-size: 1.25rem;
-                    }
                 }
             `}</style>
         </div>
