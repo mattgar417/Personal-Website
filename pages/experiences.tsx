@@ -24,6 +24,24 @@ export default function Experiences() {
         setIsVisible(true);
     }, []);
 
+	const handleItemClick = (
+  	path?: string,
+  	externalLink?: string,
+ 	 action?: string
+     ) => {
+       if (action === 'copyEmail') {
+    	navigator.clipboard.writeText('gmatthew022@gmail.com').then(() => {
+      	 setShowCopiedMessage(true);
+     	 setTimeout(() => setShowCopiedMessage(false), 2000);
+         });
+   } else if (action === 'openResume') {
+      window.open('/Matthew Garcia Resume.pdf', '_blank');
+   } else if (externalLink) {
+      window.open(externalLink, '_blank');
+   } else if (path) {
+      router.push(path);
+   }
+
 	const matthewBanner = [
     	{ label: 'Home', path: '/home' },
     	{ label: 'Experiences', path: '/experiences' },
