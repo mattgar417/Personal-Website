@@ -66,9 +66,10 @@ export default function Matthew() {
             <hr className="w-full border-t border-gray-600 mb-16" />
 
             {/* Main content */}
-            <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16 lg:gap-32 px-6 sm:px-12 md:px-24 py-8 md:py-12 w-full max-w-7xl mx-auto box-border">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16 lg:gap-32 py-8 md:py-12 w-full box-border style={{ paddingRight: '8rem', paddingLeft: '8rem' }} >
+            
                 {/* Left Column: Text Box */} 
-                <div className="flex-1 max-w-full md:max-w-[60%] text-center md:text-left">
+                <div className="flex-1 max-w-full md:max-w-[60%] text-center">
                     <h1 className="text-4xl font-bold text-white mb-8" style={{ marginBottom: '2.5rem' }}>Matthew Garcia
                     </h1>
                     <p className="text-lg text-white mb-8" style={{ marginBottom: '2.5rem' }}>
