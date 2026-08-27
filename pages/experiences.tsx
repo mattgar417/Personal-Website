@@ -25,7 +25,7 @@ export default function Experiences() {
     }, []);
 
     const handleBackClick = () => {
-        router.push('/mainpage');
+        router.push('/home');
     };
 
     const experiences: Experience[] = [
