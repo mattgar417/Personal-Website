@@ -30,12 +30,15 @@ export default function Experiences() {
  	 action?: string
      ) => {
        if (action === 'openResume') {
-      window.open('/Matthew Garcia Resume.pdf', '_blank');
-   } else if (externalLink) {
-      window.open(externalLink, '_blank');
-   } else if (path) {
-      router.push(path);
-   }
+      	window.open('/Matthew Garcia Resume.pdf', '_blank');
+       } 
+	   else if (externalLink) {
+      	window.open(externalLink, '_blank');
+       } 
+	   else if (path) {
+      	router.push(path);
+   	   }
+	};
 
 	const matthewBanner = [
     	{ label: 'Home', path: '/home' },
