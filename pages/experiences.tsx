@@ -29,12 +29,7 @@ export default function Experiences() {
   	externalLink?: string,
  	 action?: string
      ) => {
-       if (action === 'copyEmail') {
-    	navigator.clipboard.writeText('gmatthew022@gmail.com').then(() => {
-      	 setShowCopiedMessage(true);
-     	 setTimeout(() => setShowCopiedMessage(false), 2000);
-         });
-   } else if (action === 'openResume') {
+       if (action === 'openResume') {
       window.open('/Matthew Garcia Resume.pdf', '_blank');
    } else if (externalLink) {
       window.open(externalLink, '_blank');
