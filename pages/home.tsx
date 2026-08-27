@@ -66,7 +66,7 @@ export default function Matthew() {
             <hr className="w-full border-t border-gray-600 mb-16" />
 
             {/* Main content */}
-            <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16 lg:gap-32 py-8 md:py-12 w-full box-border style={{ paddingRight: '8rem', paddingLeft: '8rem' }} >
+            <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16 lg:gap-32 py-8 md:py-12 w-full box-border" style={{ paddingRight: '8rem', paddingLeft: '8rem' }} >
             
                 {/* Left Column: Text Box */} 
                 <div className="flex-1 max-w-full md:max-w-[60%] text-center">
