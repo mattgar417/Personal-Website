@@ -24,6 +24,13 @@ export default function Experiences() {
         setIsVisible(true);
     }, []);
 
+	const matthewBanner = [
+    	{ label: 'Home', path: '/home' },
+    	{ label: 'Experiences', path: '/experiences' },
+    	{ label: 'Extracurriculars', path: '/extracurriculars' },
+    	{ label: 'Projects', path: '/projects' },
+    ];
+
     const experiences: Experience[] = [
         {
             title: "ZOR!",
@@ -57,13 +64,6 @@ export default function Experiences() {
         },
     ];
 
-	const matthewBanner = [
-    	{ label: 'Home', path: '/home' },
-    	{ label: 'Experiences', path: '/experiences' },
-    	{ label: 'Extracurriculars', path: '/extracurriculars' },
-    	{ label: 'Projects', path: '/projects' },
-    ];
-
     return (
 		<div style={{ minHeight: '100vh', backgroundColor: '#1E1E1E', display: 'flex', justifyContent: 'center' }}>
 			
@@ -80,6 +80,10 @@ export default function Experiences() {
                 	</div>
             	))}
         	</div>
+
+			{/* Divider */} 
+            <hr className="w-full border-t border-gray-600 mb-16" />
+			
             <ItemPage Icon={FaBriefcase} title="My Experiences" color="#2B70C9">
                 <div className="experiences-grid">
                     {experiences.map((experience, index) => (
