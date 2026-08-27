@@ -61,8 +61,29 @@ export default function Experiences() {
         },
     ];
 
+	const matthewBanner = [
+    	{ label: 'Home', path: '/home' },
+    	{ label: 'Experiences', path: '/experiences' },
+    	{ label: 'Extracurriculars', path: '/extracurriculars' },
+    	{ label: 'Projects', path: '/projects' },
+    ];
+
     return (
 		<div style={{ minHeight: '100vh', backgroundColor: '#1E1E1E', display: 'flex', justifyContent: 'center' }}>
+
+		{/* Banner at the Top */}
+        <div className="flex justify-end space-x-8 mt-8 mb-8 w-full border-b border-gray-600 pb-4 px-4 sm:px-8 md:px-16 lg:px-32">
+            {matthewBanner.map((item, index) => (
+                <div
+                    key={index}
+                    className="banner-item text-white bg-[#2B2B2B] px-4 py-2 rounded-full cursor-pointer hover:bg-[#3A3A3A]"
+                    onClick={() => handleItemClick(item.path, undefined, undefined)}
+                >
+                    {item.label}
+                </div>
+            ))}
+        </div>
+			
         <div className={`experiences-container ${isVisible ? 'visible' : ''}`}>
             <div className="playful-back-button" onClick={handleBackClick}>
                 <FaChevronLeft />
