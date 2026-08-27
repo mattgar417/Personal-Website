@@ -15,6 +15,7 @@ const matthewData = [
 ];
 
 const matthewBanner = [
+    { label: 'Home', path: '/home' },
     { label: 'Experiences', path: '/experiences' },
     { label: 'Extracurriculars', path: '/extracurriculars' },
     { label: 'Projects', path: '/projects' },
@@ -50,7 +51,7 @@ export default function Matthew() {
     return (
         <div className="min-h-screen flex flex-col relative bg-[#1E1E1E] overflow-hidden">
             {/* Banner at the Top */}
-            <div className="flex justify-end space-x-8 mt-8 mb-8 w-full border-b border-gray-600 pb-4" style={{ paddingRight: '8rem', paddingLeft: '8rem' }}>
+            <div className="flex justify-end space-x-8 mt-8 mb-8 w-full border-b border-gray-600 pb-4 px-4 sm:px-8 md:px-16 lg:px-32">
                 {matthewBanner.map((item, index) => (
                     <div
                         key={index}
@@ -66,7 +67,7 @@ export default function Matthew() {
             <hr className="w-full border-t border-gray-600 mb-16" />
 
             {/* Main content */}
-            <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16 lg:gap-32 py-8 md:py-12 w-full box-border" style={{ paddingRight: '8rem', paddingLeft: '8rem' }} >
+            <div className="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16 lg:gap-32 py-8 md:py-12 w-full box-border px-4 sm:px-8 md:px-16 lg:px-32">
             
                 {/* Left Column: Text Box */} 
                 <div className="flex-1 max-w-full md:max-w-[60%] text-center">
@@ -115,7 +116,7 @@ export default function Matthew() {
             </div>
 
             {/* Icons below the picture/text box */}
-            <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '1.5rem', marginTop: '0.5rem', paddingLeft: '8rem', paddingBottom: '3rem', width: '100%', boxSizing: 'border-box' }}>
+            <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '1.5rem', marginTop: '0.5rem', paddingBottom: '3rem', width: '100%', boxSizing: 'border-box' }} className="px-4 sm:px-8 md:px-16 lg:px-32">
                 {matthewData.map((item, index) => (
                     <div
                         key={index}
