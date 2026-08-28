@@ -1,77 +1,63 @@
-/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Reset some default browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/*
+ * Theme tokens. Every colour in the app resolves through one of these, so the
+ * dark/light toggle only has to swap the `dark` class on <html>.
+ * Values are space-separated RGB channels so Tailwind can apply opacity.
+ */
+@layer base {
+  :root {
+    --color-page: 250 250 250;
+    --color-surface: 255 255 255;
+    --color-edge: 226 226 226;
+    --color-ink: 26 26 26;
+    --color-muted: 90 90 90;
+    --color-accent: 30 100 190;
+  }
+
+  .dark {
+    --color-page: 30 30 30;
+    --color-surface: 43 43 43;
+    --color-edge: 58 58 58;
+    --color-ink: 235 235 235;
+    --color-muted: 165 165 165;
+    --color-accent: 90 165 255;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Keep anchored sections clear of the sticky banner. */
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    @apply bg-page text-ink antialiased;
+  }
+
+  /* Only reveal focus rings for keyboard users. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-page;
+  }
 }
 
-/* Set default font and background color */
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #1E1E1E;
-  color: white;
-  line-height: 1.6;
+@layer utilities {
+  /* Consistent horizontal gutters + max width for every page section. */
+  .shell {
+    @apply mx-auto w-full max-w-content px-5 sm:px-8 lg:px-12;
+  }
 }
 
-/* Links */
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* Utility classes */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.rounded {
-  border-radius: 0.5rem;
-}
-
-.banner-item {
-  display: inline-flex;
-  align-items: right;
-  justify-content: right;
-  white-space: nowrap;
-}
-
-.text-box {
-  flex: .6;
-  padding-left: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem
-}
-
-hr {
-  margin-bottom: 1rem;
-}
-
-.profile-picture {
-  flex: .4;
-  padding-left: 2rem;
-  margin-bottom: 2rem
-}
-
-/* Smooth transitions for animations */
-.transition {
-  transition: all 0.3s ease-in-out;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5 {
-  font-weight: 600;
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
