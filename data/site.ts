@@ -82,6 +82,7 @@ export const experiences: Item[] = [
     position: 'Research Associate',
     description:
       'Characterized simulated acoustic signals using machine learning to develop early kick detection algorithm in offshore wells as part of the Mickey Leland Energy Fellowship Program',
+    liveLink: 'https://orise.orau.gov/mlef/index.html',
     image: '/NETL-Logo.png',
     gradient: 'linear-gradient(135deg, #1a0533 0%, #2d1b69 50%, #11998e 100%)',
   },
@@ -90,6 +91,7 @@ export const experiences: Item[] = [
     position: 'Software Engineering Co-op',
     description:
       'Programmed DSP algorithms in C to detect and neutralize GPS spoofers; ported a ResNet from Python to C for real-time signal classification',
+    liveLink: 'https://www.mayflowercom.com/us/',
     image: '/Mayflower Logo.png',
     gradient: 'linear-gradient(135deg, #1a0000 0%, #4a0000 50%, #800000 100%)',
   },
@@ -111,7 +113,7 @@ export const extracurriculars: Item[] = [
     position: 'Director of Education',
     description:
       "Served as the VP of Northeastern's AI club, planning hackathons, speaker events, bootcamps, and organizing projects",
-    liveLink: 'https://aineu.org',
+    liveLink: 'https://ainortheastern.com/',
     image: '/AINU-Logo.png',
     gradient: 'linear-gradient(135deg, #1a0533 0%, #2d1b69 50%, #11998e 100%)',
   },
@@ -141,7 +143,7 @@ export const projects: Item[] = [
     description:
       'XR Glasses that interacts with speakers and microphones, connecting via Bluetooth to an app to access LLMs',
     technologies: ['C++', 'Arduino', 'Python', 'Javascript', 'Kotlin'],
-    githubLink: 'https://github.com/SINRG-Lab',
+    githubLink: 'https://github.com/SINRG-Lab/mobicom-26-xr-ai-glass',
     image: '/Smart-Glasses.png',
     gradient: 'linear-gradient(135deg, #001a33 0%, #003366 50%, #2B70C9 100%)',
   },
