@@ -42,18 +42,15 @@ export const bio = [
   `My core research interests lie in machine learning, mobile systems, ubiquitous computing, and human-computer interaction. My goal is to combine these interests, applying them to AI systems that are able to sense and reason within the physical world, whether that be in the design of fabrics or embedded within smart glasses. Outside of work, I enjoy reading, writing essays, and working on my own projects. Feel free to explore my work in this website and connect with me through the links below!`,
 ];
 
-/** One shape for every card on the site; unused fields are simply omitted. */
 export type Item = {
   title: string;
-  /** Role held — experiences and extracurriculars only. */
   position?: string;
   description: string;
-  /** Tech stack chips — projects only. */
   technologies?: string[];
   githubLink?: string;
   liveLink?: string;
   image?: string;
-  /** Fallback banner when there is no image. */
+  // Fallback banner when there is no image
   gradient: string;
   Icon?: IconType;
 };
@@ -139,7 +136,7 @@ export const extracurriculars: Item[] = [
 
 export const projects: Item[] = [
   {
-    title: 'Smart Glasses',
+    title: 'Dragon - Smart Glasses Platform',
     description:
       'XR Glasses that interacts with speakers and microphones, connecting via Bluetooth to an app to access LLMs',
     technologies: ['C++', 'Arduino', 'Python', 'Javascript', 'Kotlin'],
