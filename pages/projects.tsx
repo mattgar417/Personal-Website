@@ -9,7 +9,7 @@ export default function Projects() {
       <Section
         title="My Projects"
         Icon={FaLaptopCode}
-        blurb="Personal and academic builds spanning ML, embedded systems, and games."
+        blurb="Personal and academic projects spanning ML, software development, and embedded systems."
         items={projects}
       />
     </Layout>
