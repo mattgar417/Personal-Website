@@ -149,6 +149,7 @@ export const projects: Item[] = [
     description: 'iOS application that visualizes seizure patterns and generates insights',
     technologies: ['Python', 'Pytorch'],
     githubLink: 'https://github.com/ZOR-app',
+    liveLink: 'https://apps.apple.com/us/app/zor/id6760430356'
     image: '/ZOR-Trends-Page.png',
     gradient: 'linear-gradient(135deg, #1a0d00 0%, #4d2600 50%, #804000 100%)',
   },
